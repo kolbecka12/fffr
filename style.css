@@ -1,0 +1,22 @@
+h1, h2, h3 {
+    font-family: 'Balsamiq Sans', cursive;
+  }
+.counter-box {
+  background-color: blue;
+  height: 18.75rem;
+  margin: 0 auto;
+  transform: translateY(-50px);
+  width: 50%;
+  z-index: 1;
+}
+.counter-image {
+  display: inline-block;
+}
+
+#hero {
+  min-height: 800px;
+}
+#top-nav {
+  color: white;
+  z-index: 1;
+}
