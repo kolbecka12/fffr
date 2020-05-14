@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
@@ -9,8 +10,8 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul class="fixed-top nav nav-fill bg-white">
+      <!-- <nav>
+        <ul class="fixed-top nav nav-fill bg-white" id="top-nav">
             <li class="nav-item">LOGO</li>
             <li class="nav-item"><a href="/#need">The Need</a></li>
             <li class="nav-item"><a href="/#program">The Program</a></li>
@@ -18,14 +19,48 @@
             <li class="nav-item"><a href="/#join">Join the Movement</a></li>
             <li class="nav-item"><button type="button" class="btn btn-primary">Donate</button>
         </ul>
+      </nav> -->
+
+      <nav class="fixed-top nav-fill bg-white navbar navbar-expand-lg navbar-light bg-light" id="top-nav">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link my-nav-link" href="/#need">The Need <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link my-nav-link" href="/#program">The Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link my-nav-link" href="/#partners">Our Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link my-nav-link" href="/#join">Join the Movement</a>
+            </li>
+          </ul>
+          <!-- <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="https://give.freshapproach.org/campaign/fresh-approach-food-advocate-covid-19-response/c281133" class="btn btn-primary"></a>
+            </li>
+          </ul> -->
+        </div>
       </nav>
+
+
+
+
+
     </header>
     <main>
       <div class="card card-image" id="hero" style="background-image: url(http://placekitten.com/g/1200/700);">
-        <div class="text-white text-center rgba-stylish-strong py-5 px-4">
-          <div class="py-5">
+        <div class="text-white text-center">
+          <div>
             <!-- Content -->
-            <h2 class="card-title h2 my-4 py-2">Connecting Local Farms<br>to Get Fresh Produce to the<br>Bay Area's Most Vulnerable Households</h2>
+            <h2 class="display-3" id="hero-title">Connecting Local Farms<br>to Get Fresh Produce to the<br>Bay Area's Most Vulnerable Households</h2>
             <a class="btn btn-primary" href="/#need">Learn More</a>
 
           </div>
@@ -36,21 +71,21 @@
           <div class="row">
             <div class="col-6">
               <div class="align-middle counter-image">
-                <img class="" src="http://placekitten.com/g/250/250" alt="">
+                <img class="w-100" src="http://placekitten.com/g/250/250" alt="">
               </div>
             </div>
             <div class="col-6">
-              <div class="counter-text"
+              <div class="counter-text text-center">
                 <h1>2,369 +</h1>
                 <h4>Bags Delivered</h4>
-                <h4 class="italic">And Counting</h4>
+                <h4 class="font-italic">And Counting</h4>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div id="need">
-        <h4>The Need</h4>
+      <section id="need">
+        <h4 class="py-5 text-center">The Need</h4>
         <!-- horizontal line -->
         <div class="container">
           <div class="row">
@@ -59,10 +94,10 @@
               <p>Today, an estimated 1 in 5 U.S. households don’t have enough to eat, and with unemployment approaching 20%, families everywhere are struggling to afford food.</p>
             </div>
             <div class="col-md-6 col-xs-12">
-              <img class="" src="http://placekitten.com/g/500/500" alt="">
+              <img class="w-100" src="http://placekitten.com/g/500/500" alt="">
             </div>
             <div class="col-md-6 col-xs-12">
-              <img class="" src="http://placekitten.com/g/500/500" alt="">
+              <img class="w-100" src="http://placekitten.com/g/500/500" alt="">
             </div>
             <div class="col-md-6 col-xs-12">
               <p>While food banks are overloaded with requests — having experienced a 73% spike in demand since Mid-March — California farmers have seen a 50% drop in sales.[source]</p>
@@ -72,9 +107,9 @@
           </div>
 
         </div>
-      </div>
-      <div id="program">
-        <h4>The Program</h4>
+      </section>
+      <section id="program">
+        <h4 class="py-5 text-center">The Program</h4>
         <!-- horizontal line -->
         <div class="container">
           <div class="row">
@@ -83,41 +118,41 @@
               <p>Each box is designed by nutritionists for ease of use, cultural relevance, and the minimization of food waste, and contains roughly $10 worth of fresh produce.</p>
             </div>
             <div class="col-md-6 col-xs-12">
-              <img class="" src="http://placekitten.com/g/500/500" alt="">
+              <img class="w-100" src="http://placekitten.com/g/500/500" alt="">
             </div>
             <div class="col-md-6 col-xs-12">
-              <img class="" src="http://placekitten.com/g/500/500" alt="">
+              <img class="w-100" src="http://placekitten.com/g/500/500" alt="">
             </div>
             <div class="col-md-6 col-xs-12">
               <p>In addition to delivering much-needed nutritious food to vulnerable Bay Area families, the FFFR Emergency Food Hub provides critical economic support to small farmers in Northern California, ensuring that the local food system remains intact and financially viable throughout the pandemic.</p>
             </div>
           </div>
         </div>
-      </div>
-      <div id="how-it-works">
-        <h4>How it Works</h4>
+      </section>
+      <section id="how-it-works">
+        <h4 class="py-5 text-center">How it Works</h4>
         <!-- horizontal line -->
         <div class="container">
         <!-- three column situation -->
           <div class="row">
-            <div class="col-md-4 col-xs-12 order-s-1">
+            <div class="col-md-4 col-xs-12 order-s-1 text-center">
               <img class="" src="http://placekitten.com/g/200/200" alt="">
             </div>
-            <div class="col-md-4 col-xs-12 order-s-4">
+            <div class="col-md-4 col-xs-12 order-s-4 text-center">
               <img class="" src="http://placekitten.com/g/200/200" alt="">
             </div>
-            <div class="col-md-4 col-xs-12 order-s-7">
+            <div class="col-md-4 col-xs-12 order-s-7 text-center">
               <img class="" src="http://placekitten.com/g/200/200" alt="">
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4 col-xs-12 order-s-2">
+            <div class="col-md-4 col-xs-12 order-s-2 text-center">
               <h2>1</h2>
             </div>
-            <div class="col-md-4 col-xs-12 order-s-5">
+            <div class="col-md-4 col-xs-12 order-s-5 text-center">
               <h2>2</h2>
             </div>
-            <div class="col-md-4 col-xs-12 order-s-8">
+            <div class="col-md-4 col-xs-12 order-s-8 text-center">
               <h2>3</h2>
             </div>
           </div>
@@ -133,85 +168,174 @@
             </div>
           </div>
         </div>
+      </section>
 
 
-      <div id="partners">
-        <h4>Project Partners</h4>
+      <section id="partners">
+        <h4 class="py-5 text-center">Project Partners</h4>
         <!-- horizontal line -->
 
         <div class="container">
           <div class="row">
-            <div class="col">
+            <div class="col-md-6 col-sm-12 pt-4">
               <div class="card">
-                <img class="card-img-top" src="/images/pathToYourImage.png" alt="Card image cap">
+                <img class="card-img-top" src="http://placekitten.com/g/200/80" alt="Card image cap">
                 <div class="card-body">
-                  <h4 class="card-title">Agricultural Institute of Marin (AIM)</h4>
+                  <h4 class="card-title text-center">Agricultural Institute of Marin (AIM)</h4>
                   <p class="card-text">
-                    Some quick example text to build on the card title
-                    and make up the bulk of the card's content.
+                    The Agriculture Institute of Marin (AIM) is a non-profit organization that operates eight Certified Farmers Markets across the Bay Area. AIM's mission is to educate the public about the benefits of eating locally grown food, while connecting communities with the regional food system.
                   </p>
-                  <a href="#!" class="btn btn-primary">Go somewhere</a>
+                  <div class="text-center">
+                    <a href="https://www.agriculturalinstitute.org/" class="btn btn-primary">Learn More</a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col-md-6 col-sm-12 pt-4">
               <div class="card">
-                <img class="card-img-top" src="/images/pathToYourImage.png" alt="Card image cap">
+                <img class="card-img-top" src="http://placekitten.com/g/200/80" alt="Card image cap">
                 <div class="card-body">
-                  <h4 class="card-title">Edible Schoolyard Project</h4>
+                  <h4 class="card-title text-center">Edible Schoolyard Project</h4>
                   <p class="card-text">
-                    Some quick example text to build on the card title
-                    and make up the bulk of the card's content.
+                    The Edible Schoolyard Project is a one-acre urban non-profit farm in Berkeley, CA dedicated to transforming the health of children by designing hands-on educational experiences in the garden, kitchen, and cafeteria that connect children to food, nature, and to each other.
                   </p>
-                  <a href="#!" class="btn btn-primary">Go somewhere</a>
+                  <div class="text-center">
+                    <a href="https://edibleschoolyard.org/" class="btn btn-primary">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 col-sm-12 pt-4">
+              <div class="card">
+                <img class="card-img-top" src="http://placekitten.com/g/200/80" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Fresh Approach</h4>
+                  <p class="card-text">
+                    Fresh Approach is a non-profit with a mission to make healthy food more accessible in the Bay Area. Though farmers’ markets, nutrition classes, and community gardening programs, Fresh Approach works to empower people of all ages to grow, cook, and access more healthy, fresh produce.
+                  </p>
+                  <div class="text-center">
+                    <a href="https://www.freshapproach.org" class="btn btn-primary">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 pt-4">
+              <div class="card">
+                <img class="card-img-top" src="http://placekitten.com/g/200/80" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Frog Hollow Farm</h4>
+                  <p class="card-text">
+                    Frog Hollow Farm is a certified organic farm in Brentwood, CA that grows organically grown fruits that are sold nationally through their well-established CSA program, as well as farmers’ markets and restaurants.
+                  </p>
+                  <div class="text-center">
+                    <a href="https://www.froghollow.org" class="btn btn-primary">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 col-sm-12 pt-4">
+              <div class="card">
+                <img class="card-img-top" src="http://placekitten.com/g/200/80" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Pie Ranch</h4>
+                  <p class="card-text">
+                    Pie Ranch is a non-profit organization and farm in Pescadero, CA dedicated to cultivating a healthy and just food system from seed to table through food education, farmer training, and regional partnerships. They normally sell their produce at their farm stand.
+                  </p>
+                  <div class="text-center">
+                    <a href="https://www.pieranch.org/" class="btn btn-primary">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 pt-4">
+              <div class="card">
+                <img class="card-img-top" src="http://placekitten.com/g/200/80" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Sanzuma</h4>
+                  <p class="card-text">
+                    Sanzuma is a non-profit organization and urban farm in San Rafael, CA dedicated to increasing the availability of freshly grown foods through gardening and urban farming, improving health, and reconnecting people with their environment. They normally sell their produce at local schools and restaurants.
+                  </p>
+                  <div class="text-center">
+                    <a href="www.sanzuma.org" class="btn btn-primary">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-6 col-sm-12 pt-4">
+              <div class="card">
+                <img class="card-img-top" src="http://placekitten.com/g/200/80" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Spade & Plow Organics</h4>
+                  <p class="card-text">
+                    Spade & Plow Organics is a small certified organic family farm located in the South Bay Area, San Martin, CA with the mission of bringing back the agricultural legacy of "The Valley of The Heart's Delight”. They normally sell their produce at six South Bay Farmers’ Markets, year-round CSA programs, produce retailers, and restaurants.
+                  </p>
+                  <div class="text-center">
+                    <a href="https://www.pieranch.org/" class="btn btn-primary">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 pt-4">
+              <div class="card">
+                <img class="card-img-top" src="http://placekitten.com/g/200/80" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title text-center">UC Gill Tract Community Farm</h4>
+                  <p class="card-text">
+                    The UC Gill Tract Community Farm is a non-profit organization and urban farm in Albany, CA established in collaboration with the community and UC Berkeley's College of Natural Resources. Its mission is to conduct community-driven research and education, while fostering equity, health, and community resiliance.
+                  </p>
+                  <div class="text-center">
+                    <a href="https://www.gilltractfarm.org/" class="btn btn-primary">Learn More</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col">
+            <div class="col-md-6 col-sm-12 pt-4">
               <div class="card">
-                <img class="card-img-top" src="/images/pathToYourImage.png" alt="Card image cap">
+                <img class="card-img-top" src="http://placekitten.com/g/200/80" alt="Card image cap">
                 <div class="card-body">
-                  <h4 class="card-title">Fresh Approach</h4>
+                  <h4 class="card-title text-center">Veggielution</h4>
                   <p class="card-text">
-                    Some quick example text to build on the card title
-                    and make up the bulk of the card's content.
+                    Veggielution is a non-profit organization and urban farm in San Jose, CA dedicated to connecting people from diverse backgrounds through food and farming to build community in East San Jose. The farm sells its produce at a farm stand that is currently closed due to the shelter in place.
                   </p>
-                  <a href="#!" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img class="card-img-top" src="/images/pathToYourImage.png" alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Frog Hollow Farm</h4>
-                  <p class="card-text">
-                    Some quick example text to build on the card title
-                    and make up the bulk of the card's content.
-                  </p>
-                  <a href="#!" class="btn btn-primary">Go somewhere</a>
+                  <div class="text-center">
+                    <a href="https://veggielution.org/" class="btn btn-primary">Learn More</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
 
-      <div id="join">
-        <h4>Join the Movement</h4>
-        <h2>We are actively looking for more farms and community organizations to join this project.</h2>
-        <p>Get in touch at programs@freshapproach.org to learn more.</p>
-      </div>
-      <div id="donate">
-        <h2>Help Fund Emergency Food Assistance for Bay Area Farms and Families</h2>
-        <p><a href="https://give.freshapproach.org/campaign/fresh-approach-food-advocate-covid-19-response/c281133" target="_blank">Make your gift today</a> or contact us directly at programs@freshapproach.org to inquire about larger contributions.</p>
-      </div>
+      <section class="bg-secondary my-0 py-5" style="height: 420px"  id="join">
+        <h4 class="py-5 text-center">Join the Movement</h4>
+        <h2 class="text-center">We are actively looking for more farms and community organizations to join this project.</h2>
+        <p class="text-center">Get in touch at programs@freshapproach.org to learn more.</p>
+      </section>
+      <section class="bg-warning my-0 py-5" style="height: 420px" id="donate">
+        <h2 class="text-center">Help Fund Emergency Food Assistance for Bay Area Farms and Families</h2>
+        <p class="text-center"><a href="https://give.freshapproach.org/campaign/fresh-approach-food-advocate-covid-19-response/c281133" target="_blank">Make your gift today</a> or contact us directly at programs@freshapproach.org to inquire about larger contributions.</p>
+      </section>
     </main>
     <footer>
-      Designed by Andie Kolbeck and Fresh Approach, 2020.
+      <div class="bg-secondary pt-5 pb-2 text-grey">
+        <p class="text-center">Designed by Andie Kolbeck and Fresh Approach, 2020.</p>
+      </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
