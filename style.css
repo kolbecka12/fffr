@@ -1,27 +1,3 @@
-/* html {
-  font-size: 1rem;
-}
-
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 1.2rem;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 1.4rem;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 1.6rem;
-  }
-} */
-
-
-
 
 
 
@@ -29,29 +5,43 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: 'Lato', sans-serif;
   }
 
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 article {
   margin: 8rem 0;
 }
 
-.counter-box {
-  background-color: blue;
-  height: 18.75rem;
-  margin: 0 auto;
-  transform: translateY(-20%);
-  width: 50%;
-  z-index: 1;
+footer {
+  background-color: #2a2a2a;
 }
 
-#hero {
-  min-height: 800px;
+mark {
+  background-color: #DBE8DA;
 }
 
-#hero-title {
-  padding: 320px 0 40px 0;
+p {
+  font-size: 20px;
 }
 
-#need {
-  margin: 5rem 0 8rem 0;
+footer p{
+  color: white;
+  font-size: 1rem;
+}
+
+section {
+  margin: 8rem 0;
+}
+
+
+/*------------------ NAV-------------------- */
+
+.navbar {
+  -webkit-box-shadow: 21px 24px 15px -29px rgba(89,89,89,0.71);
+  -moz-box-shadow: 21px 24px 15px -29px rgba(89,89,89,0.71);
+  box-shadow: 21px 24px 15px -29px rgba(89,89,89,0.71);
 }
 
 .navbar-collapse {
@@ -60,18 +50,195 @@ article {
 
 .my-nav-link {
   color: black;
+  text-decoration: none;
 }
-
-p {
-  font-size: 20px;
-}
-
-section {
-  margin: 8rem 0;
-}
-
 
 #top-nav {
   align-items: center;
-  height: 3.5rem;
+  height: 9.5rem;
+}
+
+
+/*------------------ BUTTONS-------------------- */
+
+.my-btn {
+  background-color: #336431;
+  color: white;
+}
+
+#fund-button {
+  padding: .7rem 1.7rem;
+  text-decoration: none;
+}
+
+#learn-btn {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: .7rem 1.7rem;
+  text-decoration: none;
+}
+
+/*------------------ PAGE SECTIONS-------------------- */
+
+
+.counter-box {
+  background-color: #336431;
+  color: white;
+  margin: 0 auto;
+  transform: translateY(-30%);
+  width: 50%;
+  z-index: 1;
+}
+
+#donate {
+  background-color: #DCD6CA;
+  margin: 0;
+  padding: 3rem 0;
+}
+
+
+#hero {
+  background-image: url(/images/mobile-hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: unset;
+  min-height: 800px;
+}
+
+#hero-title {
+  font-size: 32px;
+  padding: 320px 0 40px 0;
+}
+
+#how-it-works {
+  /* background-color: #f8f8f8; */
+  /* padding: 5rem 0 8rem 0; */
+}
+
+.how-icon {
+  max-width: 200px;
+  padding-top: 4rem;
+}
+
+#join {
+  background-color: #336431;
+  color: white;
+  margin: 0;
+  padding: 3rem 0;
+}
+
+
+
+/* Responsive for Tablets */
+@media screen and (min-width: 768px) {
+  #donate {
+    padding: 5rem 0;
+  }
+
+  #hero {
+    background-image: url(/images/tablet-hero.png);
+    width: 100%;
+  }
+
+  #hero-title {
+    font-size: 36px;
+    line-height: 125%
+  }
+
+  #join {
+    padding: 5rem 0;
+  }
+
+  #need {
+    margin-top: 0;
+  }
+
+  #partners {
+    background-color: #f8f8f8;
+    margin-bottom: 0;
+    padding: 3rem 0 8rem 0;
+  }
+
+  #program {
+    background-color: #f8f8f8;
+    padding: 2rem 0 5rem 0;
+  }
+
+  #top-nav {
+    height: 6.5rem;
+  }
+
+}
+
+
+/* Responsive for Desktop */
+@media screen and (min-width: 1000px) {
+
+  #donate {
+    padding: 8rem 0;
+  }
+
+  #footer-logo {
+    width: 120px;
+  }
+
+  #hero {
+    background-image: url(/images/desktop-hero.png);
+    width: 100%;
+  }
+
+  #hero-title {
+    font-size: 48px;
+    line-height: 125%
+  }
+
+  .how-icon {
+    padding-top: inherit;
+    width: 100%;
+  }
+
+  #join {
+    padding: 8rem 0;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .my-sec-heading {
+    font-size: 32px;
+  }
+
+  #need {
+    /* background-color: #f8f8f8; */
+    padding: 3rem 0 5rem 0;
+    margin: 1rem 0 8rem 0;
+  }
+
+  #partners {
+    background-color: #f8f8f8;
+    margin-bottom: 0;
+    padding: 3rem 0 8rem 0;
+  }
+
+  #program {
+    background-color: #f8f8f8;
+    padding: 3rem 0 8rem 0;
+  }
+
+
+
+
+
+
+
+
+
+  #top-nav {
+    height: 4.5rem;
+  }
+
+
 }
