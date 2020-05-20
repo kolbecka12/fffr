@@ -39,9 +39,9 @@ section {
 /*------------------ NAV-------------------- */
 
 .navbar {
-  -webkit-box-shadow: 21px 24px 15px -29px rgba(89,89,89,0.71);
-  -moz-box-shadow: 21px 24px 15px -29px rgba(89,89,89,0.71);
-  box-shadow: 21px 24px 15px -29px rgba(89,89,89,0.71);
+  -webkit-box-shadow: 0 2px 4px -1px rgba(89,89,89,0.3);
+  -moz-box-shadow: 0 2px 4px -1px rgba(89,89,89,0.3);
+  box-shadow: 0 2px 4px -1px rgba(89,89,89,0.3);
 }
 
 .navbar-collapse {
@@ -61,22 +61,39 @@ section {
 
 /*------------------ BUTTONS-------------------- */
 
-.my-btn {
+#nav-btn {
   background-color: #336431;
   color: white;
+  /* font-size: 20px; */
 }
 
-#fund-button {
+#nav-btn:hover {
+  background-color: #1F3D1E;
+}
+
+#fund-btn {
+  background-color: #336431;
+  color: white;
+  font-size: 20px;
   padding: .7rem 1.7rem;
   text-decoration: none;
+}
+
+#fund-btn:hover {
+  background-color: #1F3D1E;
 }
 
 #learn-btn {
   background-color: white;
   border: none;
   color: black;
+  font-size: 20px;
   padding: .7rem 1.7rem;
   text-decoration: none;
+}
+
+#learn-btn:hover {
+  background-color: #f2f2f2;
 }
 
 /*------------------ PAGE SECTIONS-------------------- */
@@ -227,14 +244,6 @@ section {
     background-color: #f8f8f8;
     padding: 3rem 0 8rem 0;
   }
-
-
-
-
-
-
-
-
 
   #top-nav {
     height: 4.5rem;

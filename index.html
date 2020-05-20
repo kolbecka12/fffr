@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Farm Fresh Food Relief: An Emergency Food Hub</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
@@ -13,8 +14,15 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">    <title></title>
-    <!-- END FAVICON -->
+    <meta name="theme-color" content="#ffffff">
+    <!--  META TAGS -->
+    <meta property="og:title" content="Farm Fresh Food Relief: An Emergency Food Hub">
+    <meta property="og:description" content="Connecting Local Farms to Get Fresh Produce to the Bay Area's Most Vulnerable Households.">
+    <meta property="og:image" content="https://www.farmfreshfoodrelief.org/social-image.jpg">
+    <meta property="og:url" content="https://www.farmfreshfoodrelief.org">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:site_name" content="FarmFreshFoodRelief.org">
+    <meta name="twitter:image:alt" content="Box of locally grown fresh vegetables">
   </head>
   <body>
     <header>
@@ -41,7 +49,7 @@
             </li>
           </ul>
           <ul class="navbar-nav">
-              <a href="https://give.freshapproach.org/campaign/fresh-approach-food-advocate-covid-19-response/c281133" class="nav-item"><button type="button" class="btn my-btn">Donate</button></a>
+              <a href="https://give.freshapproach.org/campaign/fresh-approach-food-advocate-covid-19-response/c281133" class="nav-item"><button type="button" class="btn" id="nav-btn">Donate</button></a>
           </ul>
         </div>
       </nav>
@@ -60,7 +68,7 @@
           <div class="row">
             <div class="col-12 text-center">
               <h1 class="display-3 p-4">3,524</h1>
-              <h3 class="pb-1">Free Bags of Produce Delivered</h3>
+              <h3 class="pb-1">Free Boxes of Produce Delivered</h3>
               <p class="font-italic pb-4">as of Tuesday, May 19th, 2020</p>
             </div>
           </div>
@@ -85,7 +93,7 @@
               <img class="w-100" src="images/block2.png" alt="">
             </div>
             <div class="col-md-6 col-xs-12">
-              <p class="w-75 m-auto">While food banks are overloaded with requests — having experienced a 73% spike in demand since Mid-March — California farmers have seen a <a href="https://www.kqed.org/bayareabites/136996/gov-newsom-announces-expansions-of-food-bank-assistance-programs">50% drop in sales.*</a></p>
+              <p class="w-75 m-auto">While food banks are overloaded with requests — having experienced a 73% spike in demand since Mid-March — California farmers have seen a <a href="https://www.kqed.org/bayareabites/136996/gov-newsom-announces-expansions-of-food-bank-assistance-programs" target="_blank">50% drop in sales.*</a></p>
               <p class="pt-5 w-75 m-auto">The Farm Fresh Food Relief (FFFR) Emergency Food Hub was created to address this imbalance: we are connecting small farms in Northern California through a network of community partners, to get <strong>millions of pounds of unsold produce to the families who need it most.</strong></p>
               <p class="pt-5 w-75 m-auto">The more local farms we connect with, the greater the impact we can have — ensuring that no family goes hungry during this time of global crisis.</p>
             </div>
@@ -100,7 +108,6 @@
           <div class="row align-items-center">
             <div class="col-md-6 col-xs-12">
               <p class="w-75 m-auto">The FFFR Emergency Food Hub is addressing widespread food insecurity by distributing free boxes of locally grown, fresh produce to low-income families at community organizations throughout the San Francisco Bay Area.</p>
-              <p class="pt-5 w-75 m-auto">Each box is designed by nutritionists for ease of use, cultural relevance, and the minimization of food waste, and contains roughly $10 worth of fresh produce.</p>
             </div>
             <div class="col-md-6 col-xs-12 mb-md-5 d-none d-sm-block">
               <img class="w-100" src="images/block3.png" alt="">
@@ -158,7 +165,7 @@
                 <div class="card-body">
                   <h4 class="card-title text-center">Agricultural Institute of Marin (AIM)</h4>
                   <p class="card-text">
-                    <a href="https://www.agriculturalinstitute.org">The Agriculture Institute of Marin (AIM)</a> is a non-profit organization that operates eight Certified Farmers Markets across the Bay Area. AIM's mission is to educate the public about the benefits of eating locally grown food, while connecting communities with the regional food system.
+                    <a href="https://www.agriculturalinstitute.org" target="_blank" >The Agriculture Institute of Marin (AIM)</a> is a non-profit organization that operates eight Certified Farmers Markets across the Bay Area. AIM's mission is to educate the public about the benefits of eating locally grown food, while connecting communities with the regional food system.
                   </p>
                 </div>
               </div>
@@ -169,7 +176,7 @@
                 <div class="card-body">
                   <h4 class="card-title text-center">Edible Schoolyard Project</h4>
                   <p class="card-text">
-                    <a href="https://edibleschoolyard.org">The Edible Schoolyard Project</a> is a one-acre urban non-profit farm in Berkeley, CA dedicated to transforming the health of children by designing hands-on educational experiences in the garden, kitchen, and cafeteria that connect children to food, nature, and to each other.
+                    <a href="https://edibleschoolyard.org" target="_blank" >The Edible Schoolyard Project</a> is a one-acre urban non-profit farm in Berkeley, CA dedicated to transforming the health of children by designing hands-on educational experiences in the garden, kitchen, and cafeteria that connect children to food, nature, and to each other.
                   </p>
                 </div>
               </div>
@@ -183,7 +190,7 @@
                 <div class="card-body">
                   <h4 class="card-title text-center">Fresh Approach</h4>
                   <p class="card-text">
-                    <a href="https://www.freshapproach.org">Fresh Approach</a> is a non-profit with a mission to make healthy food more accessible in the Bay Area. Though farmers’ markets, nutrition classes, and community gardening programs, Fresh Approach works to empower people of all ages to grow, cook, and access more healthy, fresh produce.
+                    <a href="https://www.freshapproach.org" target="_blank" >Fresh Approach</a> is a non-profit with a mission to make healthy food more accessible in the Bay Area. Though farmers’ markets, nutrition classes, and community gardening programs, Fresh Approach works to empower people of all ages to grow, cook, and access more healthy, fresh produce.
                   </p>
                 </div>
               </div>
@@ -195,7 +202,7 @@
                 <div class="card-body">
                   <h4 class="card-title text-center">Frog Hollow Farm</h4>
                   <p class="card-text">
-                    <a href="https://www.froghollow.com">Frog Hollow Farm</a> is a certified organic farm in Brentwood, CA that grows organically grown fruits that are sold nationally through their well-established CSA program, as well as farmers’ markets and restaurants.
+                    <a href="https://www.froghollow.com" target="_blank" >Frog Hollow Farm</a> is a certified organic farm in Brentwood, CA that grows organically grown fruits that are sold nationally through their well-established CSA program, as well as farmers’ markets and restaurants.
                   </p>
                 </div>
               </div>
@@ -209,7 +216,7 @@
                 <div class="card-body">
                   <h4 class="card-title text-center">Pie Ranch</h4>
                   <p class="card-text">
-                    <a href="https://www.pieranch.org">Pie Ranch</a> is a non-profit organization and farm in Pescadero, CA dedicated to cultivating a healthy and just food system from seed to table through food education, farmer training, and regional partnerships. They normally sell their produce at their farm stand.
+                    <a href="https://www.pieranch.org" target="_blank" >Pie Ranch</a> is a non-profit organization and farm in Pescadero, CA dedicated to cultivating a healthy and just food system from seed to table through food education, farmer training, and regional partnerships. They normally sell their produce at their farm stand.
                   </p>
                 </div>
               </div>
@@ -221,7 +228,7 @@
                 <div class="card-body">
                   <h4 class="card-title text-center">Sanzuma</h4>
                   <p class="card-text">
-                    <a href="https://www.sanzuma.org">Sanzuma</a> is a non-profit organization and urban farm in San Rafael, CA dedicated to increasing the availability of freshly grown foods through gardening and urban farming, improving health, and reconnecting people with their environment. They normally sell their produce at local schools and restaurants.
+                    <a href="https://www.sanzuma.org" target="_blank" >Sanzuma</a> is a non-profit organization and urban farm in San Rafael, CA dedicated to increasing the availability of freshly grown foods through gardening and urban farming, improving health, and reconnecting people with their environment. They normally sell their produce at local schools and restaurants.
                   </p>
                 </div>
               </div>
@@ -236,7 +243,7 @@
                 <div class="card-body">
                   <h4 class="card-title text-center">Spade & Plow Organics</h4>
                   <p class="card-text">
-                    <a href="https://www.spadeandplow.com">Spade & Plow Organics</a> is a small certified organic family farm located in the South Bay Area, San Martin, CA with the mission of bringing back the agricultural legacy of "The Valley of The Heart's Delight”. They normally sell their produce at six South Bay Farmers’ Markets, year-round CSA programs, produce retailers, and restaurants.
+                    <a href="https://www.spadeandplow.com" target="_blank" >Spade & Plow Organics</a> is a small certified organic family farm located in the South Bay Area, San Martin, CA with the mission of bringing back the agricultural legacy of "The Valley of The Heart's Delight”. They normally sell their produce at six South Bay Farmers’ Markets, year-round CSA programs, produce retailers, and restaurants.
                   </p>
                 </div>
               </div>
@@ -247,7 +254,7 @@
                 <div class="card-body">
                   <h4 class="card-title text-center">UC Gill Tract Community Farm</h4>
                   <p class="card-text">
-                    The <a href="https://www.gilltractfarm.org">UC Gill Tract Community Farm</a> is a non-profit organization and urban farm in Albany, CA established in collaboration with the community and UC Berkeley's College of Natural Resources. Its mission is to conduct community-driven research and education, while fostering equity, health, and community resiliance.
+                    The <a href="https://www.gilltractfarm.org" target="_blank" >UC Gill Tract Community Farm</a> is a non-profit organization and urban farm in Albany, CA established in collaboration with the community and UC Berkeley's College of Natural Resources. Its mission is to conduct community-driven research and education, while fostering equity, health, and community resiliance.
                   </p>
                 </div>
               </div>
@@ -260,7 +267,7 @@
                 <div class="card-body">
                   <h4 class="card-title text-center">Veggielution</h4>
                   <p class="card-text">
-                    <a href="https://veggielution.org">Veggielution</a> is a non-profit organization and urban farm in San Jose, CA dedicated to connecting people from diverse backgrounds through food and farming to build community in East San Jose. The farm sells its produce at a farm stand that is currently closed due to the shelter in place.
+                    <a href="https://veggielution.org" target="_blank" >Veggielution</a> is a non-profit organization and urban farm in San Jose, CA dedicated to connecting people from diverse backgrounds through food and farming to build community in East San Jose. The farm sells its produce at a farm stand that is currently closed due to the shelter in place.
                   </p>
                 </div>
               </div>
@@ -277,7 +284,7 @@
       </section>
       <section class="text-center" id="donate">
         <h2 class="m-auto w-75 pt-5 pb-5">Help Fund Emergency Food Assistance for Bay Area Farms and Families</h2>
-        <a href="https://give.freshapproach.org/campaign/fresh-approach-food-advocate-covid-19-response/c281133" button type="button" class="btn my-btn" id="fund-button">Make Your Gift Today</a>
+        <a href="https://give.freshapproach.org/campaign/fresh-approach-food-advocate-covid-19-response/c281133" button type="button" class="btn my-btn" id="fund-btn">Make Your Gift Today</a>
         <p class="pt-5">To inquire about larger contributions, contact us directly at <strong>programs@freshapproach.org</strong></p>
       </section>
     </main>
@@ -290,5 +297,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83123585-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-83123585-2');
+    </script>
   </body>
 </html>
