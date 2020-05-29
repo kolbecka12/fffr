@@ -49,7 +49,9 @@ section {
 }
 
 .my-nav-link {
+  background-color: #f2f2f2;
   color: black;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -69,6 +71,17 @@ section {
 
 #nav-btn:hover {
   background-color: #1F3D1E;
+}
+
+#nav-contact {
+  border: 2px #336431 solid;
+  color: #1F3D1E;
+  margin-left: .5rem;
+}
+
+#nav-contact:hover {
+  background-color: #f2f2f2;
+  border-color: #1F3D1E;
 }
 
 #fund-btn {
@@ -97,12 +110,16 @@ section {
 }
 
 #submit-btn {
-  background-color: white;
-  border: none;
-  color: black;
+  background-color: #336431;
+  border-radius: 4px;
+  color: white;
   font-size: 20px;
   padding: .7rem 1.7rem;
   text-decoration: none;
+}
+
+#submit-btn:hover {
+  background-color: #1F3D1E;
 }
 
 /*------------------ PAGE SECTIONS-------------------- */
@@ -160,14 +177,14 @@ section {
 
 input[type=text] {
   background-image: none;
-  font-family: Work Sans;
+  font-family: Lato;
   font-style: normal;
   font-weight: normal;
   font-size: 1.2rem;
 }
 
 textarea {
-  font-family: Work Sans;
+  font-family: Lato;
   font-style: normal;
   font-weight: normal;
   font-size: 1.2rem;
@@ -194,6 +211,11 @@ input[type=text],input[type=email] textarea {
   width: 90%;
 }
 
+#contact-text {
+  margin: 0 auto;
+  width: 90%;
+}
+
 #message-box {
   /* display: flex;
   align-items: flex-start;
@@ -208,7 +230,7 @@ input[type=text],input[type=email] textarea {
   margin-top: 1.2rem;;
   margin-bottom: 1.8rem;
   /* resize: vertical; */
-  font-family: Work Sans;
+  font-family: Lato;
   font-style: normal;
   font-weight: normal;
   font-size: 1.2rem;
@@ -261,7 +283,8 @@ input[type=text],input[type=email] textarea {
 
 
 /* Responsive for Desktop */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 992px) {
+
 
   #contact-box {
     max-width: 800px;
@@ -300,6 +323,13 @@ input[type=text],input[type=email] textarea {
 
   .logo {
     height: 40px;
+  }
+
+  .my-nav-link {
+    background-color: inherit;
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
   }
 
   .my-sec-heading {
