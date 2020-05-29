@@ -96,6 +96,15 @@ section {
   background-color: #f2f2f2;
 }
 
+#submit-btn {
+  background-color: white;
+  border: none;
+  color: black;
+  font-size: 20px;
+  padding: .7rem 1.7rem;
+  text-decoration: none;
+}
+
 /*------------------ PAGE SECTIONS-------------------- */
 
 
@@ -146,6 +155,67 @@ section {
   padding: 3rem 0;
 }
 
+/* ----------------CONTACT FORM------------ */
+
+
+input[type=text] {
+  background-image: none;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+textarea {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+input[type=text],input[type=email] textarea {
+    width: 100%;
+    padding: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 1.2rem;;
+    margin-bottom: 1.8rem;
+}
+
+#contact {
+  padding: 5rem 0;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#contact-box {
+  margin: 0 auto;
+  width: 90%;
+}
+
+#message-box {
+  /* display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap; */
+  /* overflow: visible; */
+  height: 260px;
+  width: 100%;
+  padding: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 1.2rem;;
+  margin-bottom: 1.8rem;
+  /* resize: vertical; */
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+
+}
+
 
 
 /* Responsive for Tablets */
@@ -192,6 +262,14 @@ section {
 
 /* Responsive for Desktop */
 @media screen and (min-width: 1000px) {
+
+  #contact-box {
+    max-width: 800px;
+  }
+
+  #contact {
+    max-width: 800px;
+  }
 
   #donate {
     padding: 8rem 0;
