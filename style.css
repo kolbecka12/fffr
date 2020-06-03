@@ -1,9 +1,33 @@
+/* ------------- COLORS ------------------
+
+#17201C nearly black (grey 600)
+#F6F6F6 grey 50
+#EDEEED grey 100
+#E0E2E1 grey 200
+#C7CAC8 grey 300
+#888D8B grey 400
+#505854 grey 500
+
+
+#56660E fern frond
+#6F7B6A camo green
+#9A541D burnt umber
+#19231E heavy metal */
 
 
 
-h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Lato', sans-serif;
+h1, h2 {
+    font-family: 'Fjalla One', sans-serif;
   }
+
+h3, h4, h5, h6, p {
+      font-family: 'Archivo', sans-serif;
+    }
+
+h1 {
+
+}
+
 
 a {
   color: inherit;
@@ -49,9 +73,8 @@ section {
 }
 
 .my-nav-link {
-  background-color: #f2f2f2;
-  color: black;
-  font-weight: 700;
+  color: #17201C !important;
+  font-family: 'Archivo', sans-serif;
   text-decoration: none;
 }
 
@@ -64,8 +87,11 @@ section {
 /*------------------ BUTTONS-------------------- */
 
 #nav-btn {
-  background-color: #336431;
+  background-color: #56660E;
+  border-radius: 0px;
   color: white;
+  margin-left: 2rem;
+  padding: .4rem 1rem;
   /* font-size: 20px; */
 }
 
@@ -74,9 +100,11 @@ section {
 }
 
 #nav-contact {
-  border: 2px #336431 solid;
-  color: #1F3D1E;
-  margin-left: .5rem;
+  border: 2px #56660E solid;
+  border-radius: 0px;
+  color: #17201C;
+  margin-left: 1rem;
+  padding: 0.33rem .75rem !important;
 }
 
 #nav-contact:hover {
