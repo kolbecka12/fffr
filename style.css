@@ -86,6 +86,12 @@ section {
 
 /*------------------ BUTTONS-------------------- */
 
+.btn-text {
+  color: #17201C;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+}
+
 #nav-btn {
   background-color: #56660E;
   border-radius: 0px;
@@ -112,28 +118,29 @@ section {
   border-color: #1F3D1E;
 }
 
-#fund-btn {
+#green-btn {
   background-color: #336431;
   color: white;
   font-size: 20px;
-  padding: .7rem 1.7rem;
+  padding: 0.33rem .75rem;
   text-decoration: none;
 }
 
-#fund-btn:hover {
+#green-btn:hover {
   background-color: #1F3D1E;
 }
 
-#learn-btn {
+.white-btn {
   background-color: white;
   border: none;
-  color: black;
+  border-radius: 0px;
+  color: #17201C;
   font-size: 20px;
-  padding: .7rem 1.7rem;
+  padding: 0.5rem .9rem;
   text-decoration: none;
 }
 
-#learn-btn:hover {
+.white-btn:hover {
   background-color: #f2f2f2;
 }
 
@@ -153,21 +160,7 @@ section {
 /*------------------ PAGE SECTIONS-------------------- */
 
 
-.counter-box {
-  background-color: #336431;
-  color: white;
-  margin: 0 auto;
-  transform: translateY(-30%);
-  width: 50%;
-  z-index: 1;
-}
-
-#donate {
-  background-color: #DCD6CA;
-  margin: 0;
-  padding: 3rem 0;
-}
-
+/* ------------------HERO */
 
 #hero {
   background-image: url(/images/mobile-hero.png);
@@ -180,8 +173,86 @@ section {
 
 #hero-title {
   font-size: 32px;
-  padding: 320px 0 40px 0;
+  /* padding: 320px 0 40px 0; */
 }
+
+/* ------------------HOME BLOCKS */
+
+#home-about {
+  background-color: #19231E;
+  opacity: 0.77;
+  transform: translateY(-85px);
+}
+
+#home-farms {
+  background-color: #9A541D;
+  opacity: 0.77;
+  transform: translateY(-85px);
+}
+
+#home-resources {
+  background-color: #56660E;
+  opacity: 0.77;
+  transform: translateY(-85px);
+}
+
+#home-blocks {
+  transform: translateY(-81px);
+}
+
+/* .counter-box {
+  background-color: #336431;
+  color: white;
+  margin: 0 auto;
+  transform: translateY(-30%);
+  width: 50%;
+  z-index: 1;
+} */
+
+#donate {
+  background-color: #DCD6CA;
+  margin: 0;
+  padding: 3rem 0;
+}
+
+
+
+
+
+
+.my-card {
+  border: none;
+  background-color: inherit;
+  border-radius: 0px;
+}
+
+
+/* #home-about {
+  background-image: url(/images/home-about.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: unset;
+  height: 400px;
+}
+
+#home-farms {
+  background-image: url(/images/home-farms.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: unset;
+  height: 400px;
+}
+
+#home-resources {
+  background-image: url(/images/home-resources.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: unset;
+  height: 400px;
+} */
 
 #how-it-works {
   /* background-color: #f8f8f8; */
@@ -281,7 +352,8 @@ input[type=text],input[type=email] textarea {
 
   #hero-title {
     font-size: 36px;
-    line-height: 125%
+    line-height: 125%;
+    padding: inherit;
   }
 
   #join {
@@ -336,8 +408,17 @@ input[type=text],input[type=email] textarea {
   }
 
   #hero-title {
+    color: black;
     font-size: 48px;
-    line-height: 125%
+    line-height: 125%;
+  }
+
+  .boxed {
+    background: white;
+    margin: 0 auto;
+    max-width: 80%;
+    position: relative;
+    padding: 1rem 2rem;
   }
 
   .how-icon {

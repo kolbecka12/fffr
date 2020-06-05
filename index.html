@@ -29,15 +29,15 @@
   </head>
   <body>
     <header>
-
       <nav class="fixed-top nav-fill bg-white navbar navbar-expand-lg navbar-light bg-light" id="top-nav">
-        <a class="navbar-brand" href="#"><img class="logo" src="images/logo.svg" alt="logo"></a>
+        <a class="navbar-brand d-md-none" href="#"><img class="logo w-75" src="images/logo.png" alt="logo"></a>
+        <a class="navbar-brand d-none d-md-block" href="#"><img class="logo" src="images/logo.svg" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto float-right text-right pr-3">
             <li class="nav-item">
               <a class="nav-link my-nav-link" href="/#need">About Us <span class="sr-only">(current)</span></a>
             </li>
@@ -68,15 +68,56 @@
     </header>
     <main>
       <div class="card card-image" id="hero">
-        <div class="text-white text-center">
-          <div>
-            <h1 class="d-none d-md-block" id="hero-title">Connecting Local Farms<br>to Get Fresh Produce to the<br>Bay Area's Most Vulnerable Households</h1>
+        <div class="text-white text-center boxed my-auto" id="my-title-box">
+            <h1 class="d-none d-md-block" id="hero-title">Connecting Local Farms to Get Fresh Produce to the Bay Area's Most Vulnerable Households</h1>
             <h1 class="d-md-none" id="hero-title">Connecting Local Farms to Get Fresh Produce to the Bay Area's Most Vulnerable Households</h1>
-            <a class="btn btn-primary" id="learn-btn" href="/#need">Learn More</a>
-          </div>
         </div>
       </div>
-      <div class="container counter-box d-none d-sm-block">
+
+
+
+      <div class="container">
+        <div class="row" id="home-blocks">
+          <div class="col-md-4 col-sm-12 pt-4">
+            <div class="card my-card">
+              <img class="card-img" src="/images/home-about.png" alt="Card image">
+              <div class="card-img-overlay">
+                <h1 class="card-text text-center">Who We Are</h1>
+              </div>
+              <div class="card-body text-center" id="home-about">
+                <a href="#!" class="btn white-btn btn-text">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12 pt-4">
+            <div class="card my-card">
+              <img class="card-img" src="/images/home-resources.png" alt="Card image">
+              <div class="card-img-overlay">
+                <h1 class="card-text text-center">Recipes<br>and Healthy Eating Resources</h1>
+              </div>
+              <div class="card-body text-center" id="home-resources">
+                <a href="#!" class="btn white-btn btn-text">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12 pt-4">
+            <div class="card my-card">
+              <img class="card-img" src="/images/home-farms.png" alt="Card image">
+              <div class="card-img-overlay">
+                <h1 class="card-text text-center">Discover Our Partner Farms</h1>
+              </div>
+              <div class="card-body text-center" id="home-farms">
+                <a href="#!" class="btn white-btn btn-text">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- <div class="container counter-box d-none d-sm-block">
           <div class="row">
             <div class="col-12 text-center">
               <h1 class="display-3 p-4">3,524</h1>
@@ -84,7 +125,19 @@
               <p class="font-italic pb-4">as of Tuesday, May 19th, 2020</p>
             </div>
           </div>
-        </div>
+        </div> -->
+
+
+        <section id="how-it-works">
+          <div class="container">
+          <!-- three column situation -->
+          <div>
+
+
+
+          </div>
+        </section>
+
       <section id="need">
         <h4 class="my-sec-heading py-5 text-center">The Need</h4>
         <!-- horizontal line -->
@@ -297,7 +350,7 @@
       <section class="text-center" id="donate">
         <h2 class="m-auto w-75 pt-5 pb-5">Help Fund Emergency Food Assistance for Bay Area Farms and Families</h2>
         <p class="m-auto w-75 pb-5">Funds are collected and administered by Fresh Approach, and will be distributed across partners in the Farm Fresh Food Relief program.</p>
-        <a href="https://give.freshapproach.org/campaign/fresh-approach-food-advocate-covid-19-response/c281133" button type="button" class="btn my-btn" id="fund-btn">Make Your Gift Today</a>
+        <a href="https://give.freshapproach.org/campaign/fresh-approach-food-advocate-covid-19-response/c281133" button type="button" class="btn my-btn" id="green-btn">Make Your Gift Today</a>
         <p class="pt-5">To inquire about larger contributions, contact us directly at <strong>programs@freshapproach.org</strong></p>
       </section>
       <section id="contact">
