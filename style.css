@@ -12,6 +12,7 @@
 #56660E fern frond
 #6F7B6A camo green
 #9A541D burnt umber
+#6A3D27 pickled bean
 #19231E heavy metal */
 
 
@@ -42,6 +43,11 @@ footer {
   background-color: #2a2a2a;
 }
 
+.footer-text {
+  color: #C7CAC8;
+  font-size: .7rem;
+}
+
 mark {
   background-color: #DBE8DA;
 }
@@ -57,6 +63,24 @@ footer p{
 
 section {
   margin: 8rem 0;
+}
+
+.caption {
+  text-transform: capitalize;
+  letter-spacing: .1rem;
+}
+
+.feature-title {
+  text-transform: capitalize;
+  letter-spacing: .1rem;
+}
+
+.light-text {
+  color: white;
+}
+
+.city {
+  font-size: 1rem;
 }
 
 
@@ -90,6 +114,20 @@ section {
   color: #17201C;
   font-family: 'Archivo', sans-serif;
   font-weight: 600;
+}
+
+.dark-btn {
+  background-color: #19231E;
+  border: none;
+  border-radius: 0px;
+  color: white;
+  font-size: 20px;
+  padding: 0.5rem .9rem;
+  text-decoration: none;
+}
+
+.dark-btn:hover {
+  background-color: #2C3B33;
 }
 
 #nav-btn {
@@ -178,10 +216,12 @@ section {
 
 /* ------------------HOME BLOCKS */
 
-#home-about {
+.home-about {
   background-color: #19231E;
   opacity: 0.77;
-  transform: translateY(-85px);
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
 
 #home-farms {
@@ -197,7 +237,10 @@ section {
 }
 
 #home-blocks {
-  transform: translateY(-81px);
+  max-width: 1800px;
+  transform: translateY(-150px);
+  width: 90%;
+  margin-bottom: 0;
 }
 
 /* .counter-box {
@@ -210,53 +253,58 @@ section {
 } */
 
 #donate {
-  background-color: #DCD6CA;
+  background-color: #6A3D27;
   margin: 0;
   padding: 3rem 0;
 }
 
 
-
-
-
-
-.my-card {
+.card {
   border: none;
-  background-color: inherit;
   border-radius: 0px;
 }
 
-
-/* #home-about {
-  background-image: url(/images/home-about.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: none;
-  border-radius: unset;
-  height: 400px;
+.card-img-top {
+  border-radius: 0px;
 }
 
-#home-farms {
-  background-image: url(/images/home-farms.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: none;
-  border-radius: unset;
-  height: 400px;
+.card-img-overlay {
+  margin-bottom: 85px;
 }
 
-#home-resources {
-  background-image: url(/images/home-resources.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: none;
-  border-radius: unset;
-  height: 400px;
-} */
 
-#how-it-works {
-  /* background-color: #f8f8f8; */
-  /* padding: 5rem 0 8rem 0; */
+/* ------------------FEATURED FARM SECTION */
+
+.block-text {
+  position: absolute;
+  top: 50%;
+  bottom: 85px;
+  transform: translateY(-50%);
+}
+
+
+#farms {
+  background-color: #19231E;
+  margin: 0;
+  padding: 4rem;
+}
+
+#farm-blocks {
+  padding-top: 5rem;
+  margin-bottom: 0;
+}
+
+
+/* ------------------PARTNER FARMS SECTION */
+
+#partner-farms {
+  background-color: #EDEEED;
+  margin-bottom: 0;
+  padding: 3rem 0 8rem 0;
+}
+
+.location {
+  color: #6F7B6A;
 }
 
 .how-icon {
@@ -273,6 +321,16 @@ section {
 
 /* ----------------CONTACT FORM------------ */
 
+.contact-icon {
+  color: #6A3D27;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+.red-text {
+  color: #6A3D27;
+  font-weight: 600;
+}
 
 input[type=text] {
   background-image: none;
@@ -399,7 +457,9 @@ input[type=text],input[type=email] textarea {
   }
 
   #footer-logo {
-    width: 120px;
+    max-width: 250px;
+    width: 15%;
+    padding-bottom: 1%;
   }
 
   #hero {
