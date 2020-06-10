@@ -58,6 +58,10 @@ footer p{
   letter-spacing: .1rem;
 }
 
+.grey-text {
+  color: #888D8B;
+}
+
 .light-text {
   color: white;
 }
@@ -431,6 +435,115 @@ footer {
   margin-bottom: 2rem;
 }
 
+/*------------------------------------- ABOUT PAGE SECTIONS-------------------- */
+
+.about-boxed {
+  background: white;
+  margin: 0 auto;
+  max-width: 80%;
+  opacity: 0.85;
+  position: relative;
+  padding: 1rem 2rem;
+  top: 3rem;
+}
+
+.about-content {
+  width: 85%;
+}
+
+#about-hero {
+  background-image: url(/images/mobile-hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #19231E;
+  border: none;
+  border-radius: unset;
+  min-height: 400px;
+}
+
+.about-photo {
+  -webkit-box-shadow: -26px 25px 0px -11px rgba(154,84,29,1);
+  -moz-box-shadow: -26px 25px 0px -11px rgba(154,84,29,1);
+  box-shadow: -26px 25px 0px -11px rgba(154,84,29,1);
+  margin: 2.5rem 0;
+}
+
+#how-it-works {
+  background-color: #F6F6F6;
+  margin: 0;
+  padding: 5rem 0;
+}
+
+#need {
+  background-color: #19231E;
+  margin: 0;
+  padding: 5rem 0;
+}
+
+#partners {
+  background-color: #19231E;
+}
+
+#partner-info {
+  max-width: 800px;
+  padding: 0 2rem;
+  text-align: left;
+}
+
+
+/*------------------------------------- RESOURCES PAGE SECTIONS-------------------- */
+
+#eatfresh {
+  padding: 1rem 0 1.5rem 0;
+}
+
+#fact-sheets {
+  background-color: #19231E;
+  padding: 7rem 0;
+  margin: 0;
+}
+
+#fact-sheet-blocks {
+  padding: 7rem 0;
+}
+
+#fact-sheet-description {
+  padding: 2rem 0;
+  width: 63%;
+}
+
+#featured-recipe {
+  background-color: white;
+  margin: 3rem 0;
+}
+
+#recipe-blocks {
+  background-color: #EDEEED;
+  margin-bottom: 0;
+  padding: 7rem 0;
+}
+
+.recipe-block {
+  background-color: white;
+  opacity: 0.77;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+#resources-hero {
+  background-image: url(/images/resources-hero-desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  border: none;
+  border-radius: unset;
+  min-height: 400px;
+}
+
+#video {
+  margin-top: 7rem;
+}
 
 /*------------------------------------- MEDIA QUERIES-------------------- */
 
@@ -438,9 +551,21 @@ footer {
 /* Responsive for Tablets */
 @media screen and (min-width: 768px) {
 
-  /* .block-text {
-    font-size: 1.8rem;
-  } */
+  .about-content {
+    width: 75%;
+  }
+
+  #about-hero {
+    background-image: url(/images/tablet-hero.png);
+    width: 100%;
+  }
+
+  .about-photo {
+    -webkit-box-shadow: -26px 25px 0px 6px rgba(154,84,29,1);
+    -moz-box-shadow: -26px 25px 0px 6px rgba(154,84,29,1);
+    box-shadow: -26px 25px 0px 6px rgba(154,84,29,1);
+    margin: 5rem 0;
+  }
 
   #donate {
     padding: 5rem 0;
@@ -449,6 +574,11 @@ footer {
   #featured-farm-title {
     padding-top: 0;
   }
+
+  #featured-recipe {
+    margin: 4rem 0;
+  }
+
 
   #hero {
     background-image: url(/images/tablet-hero.png);
@@ -469,15 +599,13 @@ footer {
     max-height: 46px;
   }
 
-  #need {
-    margin-top: 0;
+  #partners {
+    margin: 0;
+    padding: 3rem 0 8rem 0;
   }
 
-
-  #partners {
-    background-color: #f8f8f8;
-    margin-bottom: 0;
-    padding: 3rem 0 8rem 0;
+  #partner-info {
+    max-width: 700px;
   }
 
   #program {
@@ -495,6 +623,46 @@ footer {
 /* Responsive for Desktop */
 @media screen and (min-width: 992px) {
 
+  .about-boxed {
+    background: white;
+    margin: 0 auto;
+    max-width: 80%;
+    position: relative;
+    padding: 1rem 2rem;
+    top: 1.5rem;
+  }
+
+  .about-content {
+    max-width: 700px;
+    padding: 3rem 0;
+    width: 60%;
+  }
+
+  #about-hero {
+    background-image: url(/images/desktop-hero.png);
+    min-height: 450px;
+    width: 100%;
+  }
+
+  .about-title {
+    width: 87%;
+  }
+
+  .category-tag-container li{
+    /* rust orange */
+    background-color: #F6F6F6;
+    color: #17201C;
+    /* display: inherit; */
+    display: inline-block;
+    font: normal 1.2rem;
+    padding: .2rem 1rem;
+    margin: 0 .5rem 1rem 0;
+    text-transform: uppercase;
+  }
+
+  .category-tag-container {
+    margin: 0;
+  }
 
   #contact-box {
     max-width: 800px;
@@ -506,6 +674,10 @@ footer {
 
   #donate {
     padding: 8rem 0;
+  }
+
+  #featured-recipe {
+    margin: 6rem 0;
   }
 
   #footer-logo {
@@ -571,15 +743,18 @@ footer {
   }
 
   #need {
-    /* background-color: #f8f8f8; */
-    padding: 3rem 0 5rem 0;
-    margin: 1rem 0 8rem 0;
+    margin: 0;
   }
 
   #partners {
-    background-color: #f8f8f8;
     margin-bottom: 0;
-    padding: 3rem 0 8rem 0;
+    padding: 5rem 0 8rem 0;
+  }
+
+  #partner-info {
+    max-width: 800px;
+    padding: 1rem;
+    text-align: center;
   }
 
   #program {
@@ -590,6 +765,12 @@ footer {
   #top-nav {
     height: 4.5rem;
   }
+
+
+}
+
+/* Responsive for Desktop */
+@media screen and (min-width: 1200px) {
 
 
 }
