@@ -17,35 +17,21 @@
 
 
 
-h1, h2 {
+/* ------------- TYPEFACES ------------------ */
+
+
+h1, h2, h3 {
     font-family: 'Fjalla One', sans-serif;
   }
 
-h3, h4, h5, h6, p {
+h4, h5, h6, p {
       font-family: 'Archivo', sans-serif;
     }
-
-h1 {
-
-}
 
 
 a {
   color: inherit;
   text-decoration: underline;
-}
-
-article {
-  margin: 8rem 0;
-}
-
-footer {
-  background-color: #2a2a2a;
-}
-
-.footer-text {
-  color: #C7CAC8;
-  font-size: .7rem;
 }
 
 mark {
@@ -61,9 +47,6 @@ footer p{
   font-size: 1rem;
 }
 
-section {
-  margin: 8rem 0;
-}
 
 .caption {
   text-transform: capitalize;
@@ -84,7 +67,22 @@ section {
 }
 
 
+/* ------------- DIVS + SECTIONS ------------- */
+
+article {
+  margin: 8rem 0;
+}
+
+section {
+  margin: 8rem 0;
+}
+
+
 /*------------------ NAV-------------------- */
+
+.logo {
+  max-height: 46px;
+}
 
 .navbar {
   -webkit-box-shadow: 0 2px 4px -1px rgba(89,89,89,0.3);
@@ -102,9 +100,24 @@ section {
   text-decoration: none;
 }
 
+.my-nav-item {
+  text-align: left !important;
+  padding-left: 1rem;
+}
+
+.my-navbar-nav {
+  padding-top: 1rem;
+}
+
+.navbar-light .navbar-toggler {
+  color: #19231E;
+  border: none;
+  font-size: 1.4rem;
+}
+
 #top-nav {
   align-items: center;
-  height: 9.5rem;
+  height: 5rem;
 }
 
 
@@ -195,10 +208,22 @@ section {
   background-color: #1F3D1E;
 }
 
-/*------------------ PAGE SECTIONS-------------------- */
+
+
+/*------------------------------------- HOMEPAGE SECTIONS-------------------- */
 
 
 /* ------------------HERO */
+
+.boxed {
+  background: white;
+  margin: 0 auto;
+  max-width: 80%;
+  opacity: 0.85;
+  position: relative;
+  padding: 1rem 2rem;
+  top: 2.5rem;
+}
 
 #hero {
   background-image: url(/images/mobile-hero.png);
@@ -206,7 +231,7 @@ section {
   background-repeat: no-repeat;
   border: none;
   border-radius: unset;
-  min-height: 800px;
+  min-height: 550px;
 }
 
 #hero-title {
@@ -234,10 +259,8 @@ section {
 
 #home-blocks {
   max-width: 1800px;
-  /* transform: translateY(-150px); */
-  margin-top: -150px;
-  width: 90%;
-  margin-bottom: 0;
+  width: 98%;
+  margin-bottom: 3rem;
 }
 
 /* .counter-box {
@@ -259,7 +282,6 @@ section {
 .card {
   border: none;
   border-radius: 0px;
-  height: 330px;
 }
 
 .card-img-top {
@@ -285,7 +307,7 @@ section {
 #farms {
   background-color: #19231E;
   margin: 0;
-  padding: 4rem;
+  padding: 4rem 0 10rem 0;
 }
 
 #farm-blocks {
@@ -293,13 +315,17 @@ section {
   margin-bottom: 0;
 }
 
+#featured-farm-title {
+  padding-top: 2rem;
+}
+
 
 /* ------------------PARTNER FARMS SECTION */
 
 #partner-farms {
   background-color: #EDEEED;
-  margin-bottom: 0;
-  padding: 3rem 0 8rem 0;
+  margin: 0;
+  padding: 5rem 0 10rem 0;
 }
 
 .location {
@@ -318,7 +344,7 @@ section {
   padding: 3rem 0;
 }
 
-/* ----------------CONTACT FORM------------ */
+/* ----------------CONTACT FORM */
 
 .contact-icon {
   color: #6A3D27;
@@ -373,10 +399,6 @@ input[type=text],input[type=email] textarea {
 }
 
 #message-box {
-  /* display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap; */
-  /* overflow: visible; */
   height: 260px;
   width: 100%;
   padding: 1.2rem;
@@ -385,21 +407,47 @@ input[type=text],input[type=email] textarea {
   box-sizing: border-box;
   margin-top: 1.2rem;;
   margin-bottom: 1.8rem;
-  /* resize: vertical; */
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
   font-size: 1.2rem;
   line-height: 1.8rem;
-
 }
 
+
+/* ----------------FOOTER */
+
+footer {
+  background-color: #2a2a2a;
+}
+
+.footer-text {
+  color: #C7CAC8;
+  font-size: .7rem;
+}
+
+#footer-logo {
+  max-height: 40px;
+  margin-bottom: 2rem;
+}
+
+
+/*------------------------------------- MEDIA QUERIES-------------------- */
 
 
 /* Responsive for Tablets */
 @media screen and (min-width: 768px) {
+
+  /* .block-text {
+    font-size: 1.8rem;
+  } */
+
   #donate {
     padding: 5rem 0;
+  }
+
+  #featured-farm-title {
+    padding-top: 0;
   }
 
   #hero {
@@ -417,9 +465,14 @@ input[type=text],input[type=email] textarea {
     padding: 5rem 0;
   }
 
+  .logo {
+    max-height: 46px;
+  }
+
   #need {
     margin-top: 0;
   }
+
 
   #partners {
     background-color: #f8f8f8;
@@ -433,7 +486,7 @@ input[type=text],input[type=email] textarea {
   }
 
   #top-nav {
-    height: 6.5rem;
+    height: 4.5rem;
   }
 
 }
@@ -456,13 +509,15 @@ input[type=text],input[type=email] textarea {
   }
 
   #footer-logo {
-    max-width: 250px;
+    max-height: 100px;
     width: 15%;
     padding-bottom: 1%;
+    margin-bottom: 0;
   }
 
   #hero {
     background-image: url(/images/desktop-hero.png);
+    min-height: 800px;
     width: 100%;
   }
 
@@ -478,6 +533,12 @@ input[type=text],input[type=email] textarea {
     max-width: 80%;
     position: relative;
     padding: 1rem 2rem;
+    top: 0px;
+  }
+
+  #home-blocks {
+    width: 90%;
+    margin-top: -150px;
   }
 
   .how-icon {
@@ -502,6 +563,11 @@ input[type=text],input[type=email] textarea {
 
   .my-sec-heading {
     font-size: 32px;
+  }
+
+  .my-navbar-nav {
+    padding-top: 0;
+    margin-left: auto;
   }
 
   #need {

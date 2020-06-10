@@ -31,30 +31,30 @@
   <body>
     <header>
       <nav class="fixed-top nav-fill bg-white navbar navbar-expand-lg navbar-light bg-light" id="top-nav">
-        <a class="navbar-brand d-md-none" href="#"><img class="logo w-75" src="images/logo.png" alt="logo"></a>
-        <a class="navbar-brand d-none d-md-block" href="#"><img class="logo" src="images/logo.svg" alt="logo"></a>
+        <!-- <a class="navbar-brand d-md-none" href="#"><img class="logo" src="images/logo.png" alt="logo"></a> -->
+        <a class="navbar-brand" href="#"><img class="logo" src="images/logo.svg" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="fas fa-bars"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto float-right text-right pr-3">
-            <li class="nav-item">
+          <ul class="navbar-nav my-navbar-nav">
+            <li class="nav-item my-nav-item">
               <a class="nav-link my-nav-link" href="/#need">About Us <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item my-nav-item">
               <a class="nav-link my-nav-link" href="/#program">Partner Farms</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item my-nav-item">
               <a class="nav-link my-nav-link" href="/#partners">Resources</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item my-nav-item">
               <a class="nav-link my-nav-link" href="/#join">Join the Movement</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item my-nav-item">
               <a class="nav-link my-nav-link d-lg-none" href="/#donate">Donate</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item my-nav-item">
               <a class="nav-link my-nav-link d-lg-none" href="/#contact">Contact</a>
             </li>
           </ul>
@@ -69,9 +69,9 @@
     </header>
     <main>
       <div class="card card-image" id="hero">
-        <div class="text-white text-center boxed my-auto" id="my-title-box">
+        <div class="text-center boxed my-auto">
             <h1 class="d-none d-md-block" id="hero-title">Connecting Local Farms to Get Fresh Produce to the Bay Area's Most Vulnerable Households</h1>
-            <h1 class="d-md-none" id="hero-title">Connecting Local Farms to Get Fresh Produce to the Bay Area's Most Vulnerable Households</h1>
+            <h2 class="d-md-none" id="hero-title">We're Connecting Local Farms to Get Fresh Produce to the Bay Area's Most Vulnerable Households</h2>
         </div>
       </div
       <div class="container">
@@ -81,7 +81,8 @@
             <div class="card ">
               <img class="card-img" src="/images/home-about.png" alt="Card image">
               <div class="card-img-overlay">
-                <h1 class="card-text text-center block-text">Who We Are</h1>
+                <h1 class="d-none d-lg-block card-text text-center block-text">About the Program</h1>
+                <h2 class="d-lg-none card-text text-center block-text">About the Program</h2>
               </div>
               <div class="card-body home-about text-center">
                 <a href="#!" class="btn white-btn btn-text">Learn More</a>
@@ -92,7 +93,8 @@
             <div class="card ">
               <img class="card-img" src="/images/home-resources.png" alt="Card image">
               <div class="card-img-overlay">
-                <h1 class="card-text text-center block-text">Recipes<br> and Healthy Eating Resources</h1>
+                <h1 class="d-none d-lg-block card-text text-center block-text">Seasonal Recipes & Resources</h1>
+                <h2 class="d-lg-none card-text text-center block-text">Seasonal Recipes & Resources</h2>
               </div>
               <div class="card-body text-center home-about" id="home-resources">
                 <a href="#!" class="btn white-btn btn-text">Learn More</a>
@@ -103,7 +105,8 @@
             <div class="card ">
               <img class="card-img" src="/images/home-farms.png" alt="Card image">
               <div class="card-img-overlay">
-                <h1 class="card-text text-center block-text">Discover Our Partner Farms</h1>
+                <h1 class="d-none d-lg-block card-text text-center block-text">Our Partner Farms</h1>
+                <h2 class="d-lg-none card-text text-center block-text">Our Partner Farms</h2>
               </div>
               <div class="card-body text-center home-about" id="home-farms">
                 <a href="#!" class="btn white-btn btn-text">Learn More</a>
@@ -120,7 +123,7 @@
               <img class="w-100" src="images/catalan-featured.png" alt="">
             </div>
             <div class="col-md-6 col-xs-12 w-100 m-auto text-center">
-              <p class="caption light-text">Featured Farm</p>
+              <p class="caption light-text" id="featured-farm-title">Featured Farm</p>
               <h1 class="light-text">Catalan<br>Family Farm</h1>
               <h5 class="light-text w-50 m-auto pt-4 pb-5">"Quote about how FFFR has been super important for Catalan Family Farms"</h5>
               <a href="#!" class="btn white-btn btn-text text-center">Read More</a>
@@ -133,7 +136,8 @@
               <div class="card ">
                 <img class="card-img" src="/images/home-about.png" alt="Card image">
                 <div class="card-img-overlay">
-                  <h1 class="card-text block-text text-center">Title: Farm 1 Blog</h1>
+                  <h1 class="d-none d-lg-block card-text block-text text-center">Title: Farm 1 Blog</h1>
+                  <h2 class="d-lg-none card-text block-text text-center">Title: Farm 1 Blog</h2>
                 </div>
                 <div class="card-body home-about text-center">
                   <a href="#!" class="btn white-btn btn-text">Read More</a>
@@ -144,7 +148,8 @@
               <div class="card ">
                 <img class="card-img" src="/images/home-resources.png" alt="Card image">
                 <div class="card-img-overlay">
-                  <h1 class="card-text mx-auto block-text">Title: Farm 2 Blog</h1>
+                  <h1 class="d-none d-lg-block card-text mx-auto block-text">Title: Farm 2 Blog</h1>
+                  <h2 class="d-lg-none card-text mx-auto block-text">Title: Farm 2 Blog</h2>
                 </div>
                 <div class="card-body home-about text-center">
                   <a href="#!" class="btn white-btn btn-text">Read More</a>
@@ -155,7 +160,8 @@
               <div class="card ">
                 <img class="card-img" src="/images/home-farms.png" alt="Card image">
                 <div class="card-img-overlay">
-                  <h1 class="card-text text-center block-text">Title: Farm 3 Blog</h1>
+                  <h1 class="d-none d-lg-block card-text text-center block-text">Title: Farm 3 Blog</h1>
+                  <h2 class="d-lg-none card-text text-center block-text">Title: Farm 3 Blog</h2>
                 </div>
                 <div class="card-body home-about text-center">
                   <a href="#!" class="btn white-btn btn-text">Read More</a>
@@ -169,8 +175,8 @@
 
       <section id="partner-farms">
         <h1 class="my-sec-heading pt-5 pb-4 text-center">Our Partner Farms</h1>
-        <div class="w-50 text-center m-auto pb-4">
-          <p>The Farm Fresh Food Relief Emergency Food Hub sources fresh fruits and vegetables from more than 20 farms in the San Francisco Bay Area.</p>
+        <div class="w-75 text-center m-auto pb-4">
+          <p>The <strong>Farm Fresh Food Relief</strong> Program sources fresh produce from more than 20 farms in the San Francisco Bay Area.</p>
         </div>
         <!-- horizontal line -->
 
@@ -178,30 +184,61 @@
           <div class="row">
             <div class="col-md-6 col-sm-12 pt-4">
               <div class="card">
-                <img class="card-img-top" src="images/aim-oakland.png" alt="Card image cap">
+                <img class="card-img-top" src="images/blue-house.png" alt="Card image cap">
                 <div class="card-body">
-                  <h4 class="card-title text-center">Blue House Farm</h4>
+                  <h3 class="card-title text-center py-1">Blue House Farm</h3>
                   <div class="location text-center pt-1 pb-3">
                     <i class="fas fa-map-marker-alt d-inline pr-1"></i>
-                    <p class="city d-inline">Pescadero, CA</p>
+                    <p class="city d-inline">Pescadero, CA &ensp;|&ensp; San Mateo County</p>
                   </div>
                   <p class="card-text">
-                    <a href="https://www.agriculturalinstitute.org" target="_blank" >The Agriculture Institute of Marin (AIM)</a> is a non-profit organization that operates eight Certified Farmers Markets across the Bay Area. AIM's mission is to educate the public about the benefits of eating locally grown food, while connecting communities with the regional food system.
+                    <a href="https://www.https://bluehousefarm.com" target="_blank" >Blue House Farm</a> grows a diverse range of certified organic vegetables, fruits and cut flowers year-round, on 60 acres nestled at the end of a small agricultural valley in Pescadero, California. They specialize in strawberries, tomatoes, leafy greens and peppers for farmers' markets, wholesale purchasers, and their farmstand.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-sm-12 pt-4">
               <div class="card">
-                <img class="card-img-top" src="images/esyp.png" alt="Card image cap">
+                <img class="card-img-top" src="images/brisa-de-ano.png" alt="Card image cap">
                 <div class="card-body">
-                  <h4 class="card-title text-center">Brisa de Año</h4>
+                  <h3 class="card-title text-center py-1">Brisa de Año Ranch</h3>
                   <div class="location text-center pt-1 pb-3">
                     <i class="fas fa-map-marker-alt d-inline pr-1"></i>
-                    <p class="city d-inline">Pescadero, CA</p>
+                    <p class="city d-inline">Pescadero, CA &ensp;|&ensp; San Mateo County</p>
                   </div>
                   <p class="card-text">
-                    <a href="https://edibleschoolyard.org" target="_blank" >The Edible Schoolyard Project</a> is a one-acre urban non-profit farm in Berkeley, CA dedicated to transforming the health of children by designing hands-on educational experiences in the garden, kitchen, and cafeteria that connect children to food, nature, and to each other.
+                    <a href="https://www.brisaranch.com" target="_blank">Brisa de Año Ranch</a> is a small organic farm that was founded in January 2018 by Cole Mazariegos, Verónica Mazariegos, and Cristóbal Cruz Hernandez. These three friends all work the farm and grow a variety of fruits, vegetables, and flowers along the beautiful coast.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 col-sm-12 pt-4">
+              <div class="card">
+                <img class="card-img-top" src="images/maria-catalan.png" alt="Card image cap">
+                <div class="card-body">
+                  <h3 class="card-title text-center py-1">Catalan Farms</h3>
+                  <div class="location text-center pt-1 pb-3">
+                    <i class="fas fa-map-marker-alt d-inline pr-1"></i>
+                    <p class="city d-inline">Hollistar, CA &ensp;|&ensp; San Benito County</p>
+                  </div>
+                  <p class="card-text">A third-generation farmer, Maria Catalan, is the first Latina migrant farm worker to own and operate an organic farm in California. Today she has nearly two decades of farming under her belt, and continues to grow organic, seasonal produce such as tomatoes, tomatillos, zucchini, chilies, and cucumbers on her Hollister farm.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 pt-4">
+              <div class="card">
+                <img class="card-img-top" src="images/fifth-crow.png" alt="Card image cap">
+                <div class="card-body">
+                  <h3 class="card-title text-center py-1">Fifth Crow Farm</h3>
+                  <div class="location text-center pt-1 pb-3">
+                    <i class="fas fa-map-marker-alt d-inline pr-1"></i>
+                    <p class="city d-inline">Pescadero, CA &ensp;|&ensp; San Mateo County</p>
+                  </div>
+                  <p class="card-text">
+                    <a href="https://https://fifthcrowfarm.com" target="_blank" >Fifth Crow Farm</a> Grounded in a values-based approach to land stewardship, Fifth Crow Farm is a dynamic and diversified organic farm in Pescadero, CA. Founded in 2008 with a shoestring budget, a supportive local community, and ambitious dreams, Fifth Crow strives to bring eaters the highest quality, best tasting, and most nutritious food possible.
                   </p>
                 </div>
               </div>
@@ -211,15 +248,14 @@
           <div class="row">
             <div class="col-md-6 col-sm-12 pt-4">
               <div class="card">
-                <img class="card-img-top" src="images/fresh-approach.png" alt="Card image cap">
+                <img class="card-img-top" src="images/fly-girl-farm.png" alt="Card image cap">
                 <div class="card-body">
-                  <h4 class="card-title text-center">Catalan Farms</h4>
+                  <h3 class="card-title text-center">Fly Girl Farm</h3>
                   <div class="location text-center pt-1 pb-3">
                     <i class="fas fa-map-marker-alt d-inline pr-1"></i>
-                    <p class="city d-inline">Pescadero, CA</p>
+                    <p class="city d-inline">Pescadero, CA &ensp;|&ensp; San Mateo County</p>
                   </div>
-                  <p class="card-text">
-                    <a href="https://www.freshapproach.org" target="_blank" >Fresh Approach</a> is a non-profit with a mission to make healthy food more accessible in the Bay Area. Though farmers’ markets, nutrition classes, and community gardening programs, Fresh Approach works to empower people of all ages to grow, cook, and access more healthy, fresh produce.
+                  <p class="card-text">Fly Girl Farm, a four-acre women-run farm in Pescadero, CA, started in 2010 with a goal to improve the health of communities in the Bay Area. The farm now grows peppers, tomatoes, leafy greens, potatoes, cucumbers, strawberries, and more, plus vibrant cut flowers, all sold at farmers markets and to local chefs. Airielle and Kaeleigh, the farm’s owners, also actively mentor aspiring female farmers.
                   </p>
                 </div>
               </div>
@@ -227,50 +263,14 @@
 
             <div class="col-md-6 col-sm-12 pt-4">
               <div class="card">
-                <img class="card-img-top" src="images/frog-hollow.png" alt="Card image cap">
+                <img class="card-img-top" src="images/gallardo.png" alt="Card image cap">
                 <div class="card-body">
-                  <h4 class="card-title text-center">Fifth Crow Farm</h4>
+                  <h3 class="card-title text-center py-1">Gallardo's Organic Farm</h3>
                   <div class="location text-center pt-1 pb-3">
                     <i class="fas fa-map-marker-alt d-inline pr-1"></i>
-                    <p class="city d-inline">Pescadero, CA</p>
+                    <p class="city d-inline">Salinas, CA &ensp;|&ensp; Monterrey County</p>
                   </div>
-                  <p class="card-text">
-                    <a href="https://www.froghollow.com" target="_blank" >Frog Hollow Farm</a> is a certified organic farm in Brentwood, CA that grows organically grown fruits that are sold nationally through their well-established CSA program, as well as farmers’ markets and restaurants.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6 col-sm-12 pt-4">
-              <div class="card">
-                <img class="card-img-top" src="images/pie-ranch.png" alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title text-center">Fly Girl Farm</h4>
-                  <div class="location text-center pt-1 pb-3">
-                    <i class="fas fa-map-marker-alt d-inline pr-1"></i>
-                    <p class="city d-inline">Pescadero, CA</p>
-                  </div>
-                  <p class="card-text">
-                    <a href="https://www.pieranch.org" target="_blank" >Pie Ranch</a> is a non-profit organization and farm in Pescadero, CA dedicated to cultivating a healthy and just food system from seed to table through food education, farmer training, and regional partnerships. They normally sell their produce at their farm stand.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-sm-12 pt-4">
-              <div class="card">
-                <img class="card-img-top" src="images/sanzuma.png" alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title text-center">Gallardo's Organic Farm</h4>
-                  <div class="location text-center pt-1 pb-3">
-                    <i class="fas fa-map-marker-alt d-inline pr-1"></i>
-                    <p class="city d-inline">Pescadero, CA</p>
-                  </div>
-                  <p class="card-text">
-                    <a href="https://www.sanzuma.org" target="_blank" >Sanzuma</a> is a non-profit organization and urban farm in San Rafael, CA dedicated to increasing the availability of freshly grown foods through gardening and urban farming, improving health, and reconnecting people with their environment. They normally sell their produce at local schools and restaurants.
-                  </p>
+                  <p class="card-text">Jose Gallardo comes from generations of farmers and grew up around agriculture his whole life.  Jose is committed to growing organic because he believes “a child who eats a strawberry shouldn’t eat a spoon of chemicals, but just a strawberry.”</p>
                 </div>
               </div>
             </div>
@@ -280,15 +280,15 @@
           <div class="row">
             <div class="col-md-6 col-sm-12 pt-4">
               <div class="card">
-                <img class="card-img-top" src="images/spade-plow.png" alt="Card image cap">
+                <img class="card-img-top" src="images/green-oaks-creek.png" alt="Card image cap">
                 <div class="card-body">
-                  <h4 class="card-title text-center">Green Oaks Creek Farm</h4>
+                  <h3 class="card-title text-center py-1">Green Oaks Creek Farm</h3>
                   <div class="location text-center pt-1 pb-3">
                     <i class="fas fa-map-marker-alt d-inline pr-1"></i>
-                    <p class="city d-inline">Pescadero, CA</p>
+                    <p class="city d-inline">Pescadero, CA &ensp;|&ensp; San Mateo County</p>
                   </div>
                   <p class="card-text">
-                    <a href="https://www.spadeandplow.com" target="_blank" >Spade & Plow Organics</a> is a small certified organic family farm located in the South Bay Area, San Martin, CA with the mission of bringing back the agricultural legacy of "The Valley of The Heart's Delight”. They normally sell their produce at six South Bay Farmers’ Markets, year-round CSA programs, produce retailers, and restaurants.
+                    <a href="http://www.greenoakswedding.com/farm" target="_blank" >Green Oaks Creek Farm</a> is a small certified organic farm nestled against the Santa Cruz mountains. The farm specializes in organic vegetables, strawberries, blackberries, herbs, flowers, and chickens for farmers' markets, local restaurants, and weddings that are held at their private venue onsite.
                   </p>
                 </div>
               </div>
@@ -297,10 +297,10 @@
               <div class="card">
                 <img class="card-img-top" src="images/gill-tract.png" alt="Card image cap">
                 <div class="card-body">
-                  <h4 class="card-title text-center">Lady Bug Farm</h4>
+                  <h3 class="card-title text-center py-1">Lady Bug Farm</h3>
                   <div class="location text-center pt-1 pb-3">
                     <i class="fas fa-map-marker-alt d-inline pr-1"></i>
-                    <p class="city d-inline">Pescadero, CA</p>
+                    <p class="city d-inline">Pescadero, CA &ensp;|&ensp; San Mateo County</p>
                   </div>
                   <p class="card-text">
                     The <a href="https://www.gilltractfarm.org" target="_blank" >UC Gill Tract Community Farm</a> is a non-profit organization and urban farm in Albany, CA established in collaboration with the community and UC Berkeley's College of Natural Resources. Its mission is to conduct community-driven research and education, while fostering equity, health, and community resiliance.
@@ -312,12 +312,12 @@
           <div class="row">
             <div class="col-md-6 col-sm-12 pt-4">
               <div class="card">
-                <img class="card-img-top" src="images/spade-plow.png" alt="Card image cap">
+                <img class="card-img-top" src="images/pie-ranch.png" alt="Card image cap">
                 <div class="card-body">
-                  <h4 class="card-title text-center">Pie Ranch</h4>
+                  <h3 class="card-title text-center py-1">Pie Ranch</h3>
                   <div class="location text-center pt-1 pb-3">
                     <i class="fas fa-map-marker-alt d-inline pr-1"></i>
-                    <p class="city d-inline">Pescadero, CA</p>
+                    <p class="city d-inline">Pescadero, CA &ensp;|&ensp; San Mateo County</p>
                   </div>
                   <p class="card-text">
                     <a href="https://www.pieranch.org" target="_blank" >Pie Ranch</a> is a non-profit organization and farm dedicated to cultivating a healthy and just food system from seed to table through food education, farmer training, and regional partnerships. They normally sell their produce at their farm stand.
@@ -327,16 +327,14 @@
             </div>
             <div class="col-md-6 col-sm-12 pt-4">
               <div class="card">
-                <img class="card-img-top" src="images/gill-tract.png" alt="Card image cap">
+                <img class="card-img-top" src="images/ponce.png" alt="Card image cap">
                 <div class="card-body">
-                  <h4 class="card-title text-center">Ponce Produce</h4>
+                  <h3 class="card-title text-center py-1">Ponce Produce</h3>
                   <div class="location text-center pt-1 pb-3">
                     <i class="fas fa-map-marker-alt d-inline pr-1"></i>
-                    <p class="city d-inline">Pescadero, CA</p>
+                    <p class="city d-inline">Watsonville, CA &ensp;|&ensp; Santa Cruz County</p>
                   </div>
-                  <p class="card-text">
-                    The <a href="https://www.gilltractfarm.org" target="_blank" >UC Gill Tract Community Farm</a> is a non-profit organization and urban farm in Albany, CA established in collaboration with the community and UC Berkeley's College of Natural Resources. Its mission is to conduct community-driven research and education, while fostering equity, health, and community resiliance.
-                  </p>
+                  <p class="card-text">Founded in 2012 by Ruben Ponce who grows a wide variety of vegetables used in Hispanic cooking including hot peppers, Roma tomatoes, winter, and summer squashes, cilantro, beans, tomatillos, nopales, and chayote. Ruben has over 20 years of farming experience and he loves being out in the fields.</p>
                 </div>
               </div>
             </div>
@@ -344,7 +342,7 @@
         </div>
       </section>
       <section id="contact">
-        <h2 class="text-center">Contact Us</h2>
+        <h2 class="pt-5 text-center">Contact Us</h2>
         <div id="contact-text m-auto">
           <i class="pt-5 pb-3 contact-icon d-block text-center fas fa-boxes"></i>
           <h4 class="pb-3 text-center red-text">To Receive a Farm Fresh Food Relief Box for Your Family:</h4>
