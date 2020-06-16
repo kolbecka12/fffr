@@ -47,14 +47,20 @@ footer p{
   font-size: 1rem;
 }
 
+.author {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+}
+
 
 .caption {
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: .1rem;
 }
 
 .feature-title {
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: .1rem;
 }
 
@@ -145,6 +151,7 @@ section {
 
 .dark-btn:hover {
   background-color: #2C3B33;
+  color: white;
 }
 
 #nav-btn {
@@ -196,7 +203,7 @@ section {
 }
 
 .white-btn:hover {
-  background-color: #f2f2f2;
+  background-color: #EDEEED;
 }
 
 #submit-btn {
@@ -288,12 +295,24 @@ section {
   border-radius: 0px;
 }
 
+.card-img {
+  border-radius: 0px;
+}
+
+.card-img-bottom {
+  border-radius: 0px;
+}
+
 .card-img-top {
   border-radius: 0px;
 }
 
 .card-img-overlay {
   margin-bottom: 85px;
+}
+
+.card-img-dark {
+  background-color: #19231E;
 }
 
 
@@ -311,7 +330,7 @@ section {
 #farms {
   background-color: #19231E;
   margin: 0;
-  padding: 4rem 0 10rem 0;
+  padding: 4rem 0 7rem 0;
 }
 
 #farm-blocks {
@@ -499,17 +518,22 @@ footer {
 
 #fact-sheets {
   background-color: #19231E;
-  padding: 7rem 0;
+  padding: 4rem 0;
   margin: 0;
 }
 
 #fact-sheet-blocks {
-  padding: 7rem 0;
+  display: none;
 }
 
 #fact-sheet-description {
   padding: 2rem 0;
   width: 63%;
+}
+
+
+#fact-sheet-feature {
+  display: none;
 }
 
 #featured-recipe {
@@ -519,8 +543,8 @@ footer {
 
 #recipe-blocks {
   background-color: #EDEEED;
-  margin-bottom: 0;
-  padding: 7rem 0;
+  margin: 0;
+  padding: 5rem 0;
 }
 
 .recipe-block {
@@ -529,6 +553,11 @@ footer {
   bottom: 0;
   position: absolute;
   width: 100%;
+}
+
+.recipe-card-mobile {
+  margin: 2rem 1rem;
+  width: 90%;
 }
 
 #resources-hero {
@@ -541,8 +570,72 @@ footer {
   min-height: 400px;
 }
 
+#seasonal-title {
+  width: 90%;
+  margin: 0 auto;
+}
+
 #video {
-  margin-top: 7rem;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+/*------------------------------------- FARM STORIES PAGES SECTIONS-------------------- */
+
+#blog {
+  background-color: white;
+  margin: 4rem 0;
+}
+
+.blog {
+  padding: 1rem 0;
+}
+
+.blog-boxed {
+  background: white;
+  margin: 0 auto;
+  max-width: 60%;
+  opacity: 0.65;
+  position: relative;
+  padding: 1rem 2rem;
+  top: 1.5rem;
+}
+
+#brisa-de-ano-hero {
+  background-image: url(/images/brisa-de-ano-mobile-hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: unset;
+  min-height: 550px;
+}
+
+#catalan-hero {
+  background-image: url(/images/catalan-hero-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: unset;
+  min-height: 550px;
+}
+
+#frog-hollow-hero {
+  background-image: url(/images/frog-hollow-hero-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: unset;
+  min-height: 550px;
+}
+
+
+#gallardos-hero {
+  background-image: url(/images/gallardo-hero-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: unset;
+  min-height: 550px;
 }
 
 /*------------------------------------- MEDIA QUERIES-------------------- */
@@ -567,8 +660,14 @@ footer {
     margin: 5rem 0;
   }
 
+
+
   #donate {
     padding: 5rem 0;
+  }
+
+  #fact-sheet-blocks {
+    display: none;
   }
 
   #featured-farm-title {
@@ -578,7 +677,6 @@ footer {
   #featured-recipe {
     margin: 4rem 0;
   }
-
 
   #hero {
     background-image: url(/images/tablet-hero.png);
@@ -648,6 +746,32 @@ footer {
     width: 87%;
   }
 
+  .blog-boxed {
+    background: white;
+    margin: 0 auto;
+    max-width: 60%;
+    position: relative;
+    padding: 1rem 2rem;
+    top: 1.5rem;
+  }
+
+  .boxed {
+    background: white;
+    margin: 0 auto;
+    max-width: 80%;
+    position: relative;
+    padding: 1rem 2rem;
+    top: 0px;
+  }
+
+  #brisa-de-ano-hero {
+    background-image: url(/images/brisa-de-ano-hero.png);
+  }
+
+  #catalan-hero {
+    background-image: url(/images/catalan-hero.png);
+  }
+
   .category-tag-container li{
     /* rust orange */
     background-color: #F6F6F6;
@@ -676,8 +800,26 @@ footer {
     padding: 8rem 0;
   }
 
+  #fact-sheet-blocks {
+    display: flex;
+    padding: 7rem 0 1rem 0;
+  }
+
+  #fact-sheet-feature {
+    display: inherit;
+    padding-top: 5rem;
+  }
+
+  #fact-sheets {
+    padding: 7rem 0;
+  }
+
   #featured-recipe {
-    margin: 6rem 0;
+    margin: 8rem 0;
+  }
+
+  #frog-hollow-hero {
+    background-image: url(/images/frog-hollow-hero.png);
   }
 
   #footer-logo {
@@ -687,9 +829,13 @@ footer {
     margin-bottom: 0;
   }
 
+  #gallardos-hero {
+    background-image: url(/images/gallardo-hero.png);
+  }
+
   #hero {
     background-image: url(/images/desktop-hero.png);
-    min-height: 800px;
+    height: 100%;;
     width: 100%;
   }
 
@@ -697,15 +843,6 @@ footer {
     color: black;
     font-size: 48px;
     line-height: 125%;
-  }
-
-  .boxed {
-    background: white;
-    margin: 0 auto;
-    max-width: 80%;
-    position: relative;
-    padding: 1rem 2rem;
-    top: 0px;
   }
 
   #home-blocks {
@@ -722,6 +859,10 @@ footer {
     padding: 8rem 0;
   }
 
+  .lang-btn {
+    margin: 0 .5rem;
+  }
+
   .logo {
     height: 40px;
   }
@@ -731,6 +872,10 @@ footer {
     color: black;
     font-weight: normal;
     text-decoration: none;
+  }
+
+  .my-nav-link:hover {
+    text-decoration: underline;
   }
 
   .my-sec-heading {
@@ -762,15 +907,32 @@ footer {
     padding: 3rem 0 8rem 0;
   }
 
+  #recipe-blocks {
+    background-color: #EDEEED;
+    margin: 0;
+    padding: 7rem 0;
+  }
+
+  .resize-title {
+    font-size: 2rem;
+  }
+
   #top-nav {
     height: 4.5rem;
   }
+
+  #video {
+    margin-top: 7rem;
+  }
+
 
 
 }
 
 /* Responsive for Desktop */
 @media screen and (min-width: 1200px) {
-
+  .resize-title {
+    font-size: 2.5rem;
+  }
 
 }
