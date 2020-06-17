@@ -46,7 +46,7 @@
               <a class="nav-link my-nav-link" href="/#farms">Partner Farms</a>
             </li>
             <li class="nav-item my-nav-item">
-              <a class="nav-link my-nav-link" href="/resources">Resources</a>
+              <a class="nav-link my-nav-link" href="/recipes">Recipes</a>
             </li>
             <li class="nav-item my-nav-item">
               <a class="nav-link my-nav-link d-lg-none" href="https://give.freshapproach.org/campaign/fresh-approach-food-advocate-covid-19-response/c281133">Donate</a>
@@ -67,14 +67,13 @@
     <main>
       <div class="card card-image" id="hero">
         <div class="text-center boxed my-auto">
-            <h1 class="d-none d-md-block" id="hero-title">Connecting Local Farms to Get Fresh Produce to the Bay Area's Most Vulnerable Households</h1>
-            <h2 class="d-md-none" id="hero-title">We're Connecting Local Farms to Get Fresh Produce to the Bay Area's Most Vulnerable Households</h2>
+            <h1 class="d-none d-md-block" id="hero-title">Connecting Local Farms to Provide Fresh Produce for the Bay Area's Most Vulnerable Households</h1>
+            <h2 class="d-md-none" id="hero-title">We're Connecting Local Farms to Provide Fresh Produce for the Bay Area's Most Vulnerable Households</h2>
         </div>
-      </div
-      <div class="container">
-        <div class="row mx-auto" id="home-blocks">
-
-          <div class="col-md-4 col-sm-12 pt-4">
+      </div>
+      <div class="container" id="home-blocks-container">
+        <div class="row m-auto">
+          <div class="col-md-4 col-sm-12 home-blocks">
             <div class="card ">
               <img class="card-img" src="/images/home-about.png" alt="Farmers loading boxes of fresh vegetables onto a truck">
               <div class="card-img-overlay">
@@ -86,7 +85,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-12 pt-4">
+          <div class="col-md-4 col-sm-12 home-blocks">
             <div class="card ">
               <img class="card-img" src="/images/home-resources.png" alt="bowl of chopped avocado, tomato, and jalapeño">
               <div class="card-img-overlay">
@@ -98,7 +97,48 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-12 pt-4">
+          <div class="col-md-4 col-sm-12 home-blocks">
+            <div class="card ">
+              <img class="card-img" src="/images/home-farms.png" alt="two people with wide hats harvesting herbs on a farm">
+              <div class="card-img-overlay">
+                <h1 class="d-none d-lg-block card-text text-center block-text">Our Partner Farms</h1>
+                <h2 class="d-lg-none card-text text-center block-text">Our Partner Farms</h2>
+              </div>
+              <div class="card-body text-center home-about" id="home-farms">
+                <a href="#farms" class="btn white-btn btn-text">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container" id="home-blocks-container">
+        <div class="row mx-auto" id="home-blocks">
+
+          <div class="col-md-4 col-sm-12">
+            <div class="card ">
+              <img class="card-img" src="/images/home-about.png" alt="Farmers loading boxes of fresh vegetables onto a truck">
+              <div class="card-img-overlay">
+                <h1 class="d-none d-lg-block card-text text-center block-text">About the Program</h1>
+                <h2 class="d-lg-none card-text text-center block-text">About the Program</h2>
+              </div>
+              <div class="card-body home-about text-center">
+                <a href="/about" class="btn white-btn btn-text">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="card ">
+              <img class="card-img" src="/images/home-resources.png" alt="bowl of chopped avocado, tomato, and jalapeño">
+              <div class="card-img-overlay">
+                <h1 class="d-none d-lg-block card-text text-center block-text">Seasonal Recipes & Resources</h1>
+                <h2 class="d-lg-none card-text text-center block-text">Seasonal Recipes & Resources</h2>
+              </div>
+              <div class="card-body text-center home-about" id="home-resources">
+                <a href="/resources" class="btn white-btn btn-text">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
             <div class="card ">
               <img class="card-img" src="/images/home-farms.png" alt="two people with wide hats harvesting herbs on a farm">
               <div class="card-img-overlay">
@@ -112,7 +152,7 @@
           </div>
 
         </div>
-      </div>
+      </div> -->
       <section id="farms">
         <div class="container">
           <div class="row align-items-center">
@@ -234,7 +274,7 @@
                     <p class="city d-inline">Ojai Valley, CA &ensp;|&ensp; Ventura County</p>
                   </div>
                   <p class="card-text">
-                    <a href="http://tangerineman.com/" target="_blank" >Churchill Orchard</a> began farming avocados in the Ojai Valley in the 1970s. With a focus on building healthy soil, they now farm 11 acres of tangerines and 3 acres of avocados and have been CCOF-certified Organic since 2007.  Bill cultivates farmers with the same care that farmers cultivate their crops, and without him it’s possible that Ojai Pixies wouldn’t ever have found their market.
+                    <a href="http://tangerineman.com/" target="_blank" >Churchill Orchard</a> began farming avocados in the Ojai Valley in the 1970s. With a focus on building healthy soil, they now farm 11 acres of tangerines and 3 acres of avocados and have been CCOF Certified Organic since 2007. Back in the 80s, Jim Churchill and Lisa Brenneis received crucial early support from Bill Fujimoto of Monterey Market in Berkeley who bought their entire production from 1989 – 1995 and slowly built a reputation for the Ojai Pixie Tangerine. Bill cultivates farmers with the same care that farmers cultivate their crops, and without him it’s possible that Ojai Pixies wouldn’t ever have found their market.
                   </p>
                 </div>
               </div>
@@ -271,8 +311,20 @@
               </div>
             </div>
           </div>
-
           <div class="row">
+            <div class="col-md-6 col-sm-12 pt-4">
+              <div class="card">
+                <img class="card-img-top" src="images/frog-hollow.png" alt="young woman carrying a crate of vegetables in a farm field">
+                <div class="card-body">
+                  <h3 class="card-title text-center">Frog Hollow Farm</h3>
+                  <div class="location text-center pt-1 pb-3">
+                    <i class="fas fa-map-marker-alt d-inline pr-1"></i>
+                    <p class="city d-inline">Brentwood, CA &ensp;|&ensp; Contra Costa County</p>
+                  </div>
+                  <p class="card-text"><a href="https://www.froghollow.com" target="_blank" >Frog Hollow Farm</a> is a certified organic farm in Brentwood, CA that grows organically grown fruits that are sold nationally through their well-established CSA program, as well as farmers’ markets and restaurants.</p>
+                </div>
+              </div>
+            </div>
             <div class="col-md-6 col-sm-12 pt-4">
               <div class="card">
                 <img class="card-img-top" src="images/fly-girl-farm.png" alt="young woman carrying a crate of vegetables in a farm field">
@@ -287,7 +339,8 @@
                 </div>
               </div>
             </div>
-
+          </div>
+          <div class="row">
             <div class="col-md-6 col-sm-12 pt-4">
               <div class="card">
                 <img class="card-img-top" src="images/gallardo.png" alt="A smiling man selling strawberries">
@@ -301,10 +354,6 @@
                 </div>
               </div>
             </div>
-          </div>
-
-
-          <div class="row">
             <div class="col-md-6 col-sm-12 pt-4">
               <div class="card">
                 <img class="card-img-top" src="images/green-oaks-creek.png" alt="Pretty white farmhouse nestled below hills of evergreen trees">
@@ -320,6 +369,8 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="row">
             <div class="col-md-6 col-sm-12 pt-4">
               <div class="card">
                 <img class="card-img-top" src="images/pie-ranch.png" alt="Carved wooden sign reading Pie Ranch surrounded by pumpkins">
@@ -335,8 +386,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
             <div class="col-md-6 col-sm-12 pt-4">
               <div class="card">
                 <img class="card-img-top" src="images/ponce.png" alt="Man holding a large bunch of cilantro at a farmers market">
@@ -350,6 +399,8 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="row">
             <div class="col-md-6 col-sm-12 pt-4">
               <div class="card">
                 <img class="card-img-top" src="images/pomegranates.png" alt="Pile of small red pomegranates">
@@ -357,14 +408,12 @@
                   <h3 class="card-title text-center py-1">Smit Farms</h3>
                   <div class="location text-center pt-1 pb-3">
                     <i class="fas fa-map-marker-alt d-inline pr-1"></i>
-                    <p class="city d-inline">Linden, CA &ensp;|&ensp; Santa Joaquin County</p>
+                    <p class="city d-inline">Linden, CA &ensp;|&ensp; San Joaquin County</p>
                   </div>
                   <p class="card-text">At <a href="https://www.smitfarms.com" target="_blank">Smit Farms</a>, the Smit family has been growing top quality organic fruit, including apples, table grapes, cherries, stone fruit, blueberries, pomegranates and kiwifruits for over four decades. Smit Farms is committed to sustainable farming practices that will allow the soils and those tilling them to coexist in the most natural environment possible.</p>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
             <div class="col-md-6 col-sm-12 pt-4">
               <div class="card">
                 <img class="card-img-top" src="images/peppers.png" alt="Huge pile of red chili peppers">
@@ -374,13 +423,12 @@
                     <i class="fas fa-map-marker-alt d-inline pr-1"></i>
                     <p class="city d-inline">San Francisco, CA</p>
                   </div>
-                  <p class="card-text">Veritable Vegetable is a women-owned and led organic produce distribution company based in San Francisco, California since 1974. They source and deliver the freshest and highest quality produce, with unmatched service. Powered by a zero emission green fleet and driven by purpose, they put their values in action to build a sustainable and equitable food system.</p>
+                  <p class="card-text"><a href="https://www.veritablevegetable.com/" target="_blank">Veritable Vegetable</a> is a women-owned and led organic produce distribution company based in San Francisco, California since 1974. They source and deliver the freshest and highest quality produce, with unmatched service. Powered by a zero emission green fleet and driven by purpose, they put their values in action to build a sustainable and equitable food system.</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-sm-12 pt-4">
-            </div>
           </div>
+
         </div>
       </section>
       <section id="contact">
@@ -388,7 +436,7 @@
         <div id="contact-text m-auto">
           <i class="pt-5 pb-3 contact-icon d-block text-center fas fa-boxes" aria-hidden="true"></i>
           <h4 class="pb-3 text-center red-text">To Receive a Farm Fresh Food Relief Box for Your Family:</h4>
-          <p class="text-center">Boxes are distributed at partner organizations and food pantries throughout the Bay Area. To learn how to get free weekly produce boxes, please contact a nearby organization in your county of residence.</p>
+          <p class="text-center">Boxes are distributed at partner organizations and food pantries throughout the Bay Area. To learn how to get free weekly produce boxes, please contact one of our <a href="about/#partners">partner organizations</a> in your county of residence.</p>
           <i class="pt-5 pb-3 contact-icon d-block text-center fas fa-hand-holding-heart" aria-hidden="true"></i>
           <h4 class="pb-3 text-center red-text">If you are a Community Organization, Farm, or Foundation:</h4>
           <p class="text-center">Please send your inquiries to <strong><a href="mailto:programs@freshapproach.org">programs@freshapproach.org</a>.</strong></p>

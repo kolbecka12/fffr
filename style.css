@@ -34,6 +34,10 @@ a {
   text-decoration: underline;
 }
 
+a:hover {
+    color: #6F7B6A;
+}
+
 mark {
   background-color: #DBE8DA;
 }
@@ -268,12 +272,15 @@ section {
   background-color: #56660E;
 }
 
-#home-blocks {
-  max-width: 1800px;
-  width: 98%;
-  margin-bottom: 3rem;
+.home-blocks {
+  padding-top: 2rem;
 }
 
+#home-blocks-container{
+  /* background: #dddddd; */
+  /* margin: 0 auto; */
+  padding: 3rem 0;
+}
 /* .counter-box {
   background-color: #336431;
   color: white;
@@ -845,9 +852,8 @@ footer {
     line-height: 125%;
   }
 
-  #home-blocks {
-    width: 90%;
-    margin-top: -150px;
+  .home-blocks {
+    padding-top: 0;
   }
 
   .how-icon {
