@@ -80,6 +80,10 @@ footer p{
   font-size: 1rem;
 }
 
+.strong {
+  font-weight: 700;
+}
+
 
 /* ------------- DIVS + SECTIONS ------------- */
 
@@ -374,6 +378,24 @@ section {
   padding: 3rem 0;
 }
 
+/* ----------------FAQ SECTION */
+.card-header {
+  background-color: #EDEEED;
+}
+
+.faq-header {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+#faq {
+  padding: 5rem 0 0 0;
+  margin: 0 auto;
+  width: 90%;
+}
+
+
 /* ----------------CONTACT FORM */
 
 .contact-icon {
@@ -389,17 +411,19 @@ section {
 
 input[type=text] {
   background-image: none;
-  font-family: Lato;
+  font-family: Archivo;
   font-style: normal;
   font-weight: normal;
   font-size: 1.2rem;
+  letter-spacing: .01rem;
 }
 
 textarea {
-  font-family: Lato;
+  font-family: Archivo;
   font-style: normal;
   font-weight: normal;
   font-size: 1.2rem;
+  letter-spacing: .01rem;
 }
 
 input[type=text],input[type=email] textarea {
@@ -410,9 +434,15 @@ input[type=text],input[type=email] textarea {
     box-sizing: border-box;
     margin-top: 1.2rem;;
     margin-bottom: 1.8rem;
+    letter-spacing: .01rem;
 }
 
 #contact {
+  background-color: #F6F6F6;
+  margin-bottom: 0;
+}
+
+#contact-container {
   padding: 5rem 0;
   margin: 0 auto;
   width: 90%;
@@ -420,7 +450,7 @@ input[type=text],input[type=email] textarea {
 
 #contact-box {
   margin: 0 auto;
-  width: 90%;
+  /* width: 90%; */
 }
 
 #contact-text {
@@ -437,10 +467,12 @@ input[type=text],input[type=email] textarea {
   box-sizing: border-box;
   margin-top: 1.2rem;;
   margin-bottom: 1.8rem;
-  font-family: Lato;
+  font-family: Archivo;
   font-style: normal;
   font-weight: normal;
   font-size: 1.2rem;
+  letter-spacing: .01rem;
+
   line-height: 1.8rem;
 }
 
@@ -799,7 +831,7 @@ footer {
     max-width: 800px;
   }
 
-  #contact {
+  #contact-container {
     max-width: 800px;
   }
 

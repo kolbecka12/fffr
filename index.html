@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;1,400&family=Fjalla+One&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> -->
+
 
 
     <!-- FAVICON -->
@@ -47,6 +49,9 @@
             </li>
             <li class="nav-item my-nav-item">
               <a class="nav-link my-nav-link" href="/recipes">Recipes</a>
+            </li>
+            <li class="nav-item my-nav-item">
+              <a class="nav-link my-nav-link" href="/#faq">FAQ</a>
             </li>
             <li class="nav-item my-nav-item">
               <a class="nav-link my-nav-link d-lg-none" href="https://give.freshapproach.org/campaign/farm-fresh-food-relief-program/c290393">Donate</a>
@@ -448,32 +453,95 @@
 
         </div>
       </section>
-      <section id="contact">
-        <h2 class="pt-5 text-center">Contact Us</h2>
-        <div id="contact-text m-auto">
-          <i class="pt-5 pb-3 contact-icon d-block text-center fas fa-boxes" aria-hidden="true"></i>
-          <h4 class="pb-3 text-center red-text">To Receive a Farm Fresh Food Relief Box for Your Family:</h4>
-          <p class="text-center">Boxes are distributed at partner organizations and food pantries throughout the Bay Area. To learn how to get free weekly produce boxes, please contact one of our <a href="about/#partners">partner organizations</a> in your county of residence.</p>
-          <i class="pt-5 pb-3 contact-icon d-block text-center fas fa-hand-holding-heart" aria-hidden="true"></i>
-          <h4 class="pb-3 text-center red-text">If you are a Community Organization, Farm, or Foundation:</h4>
-          <p class="text-center">Please send your inquiries to <strong><a href="mailto:programs@freshapproach.org">programs@freshapproach.org</a>.</strong></p>
-          <i class="pt-5 pb-3 contact-icon d-block text-center fas fa-question-circle" aria-hidden="true"></i>
-          <h4 class="pb-3 text-center red-text">For All Other Comments and Questions:</h4>
-          <p class="text-center">Please submit your comments using the contact form blow.</p>
-          <p class="text-center pb-3">If you have questions about a Farm Fresh Food Relief box you received, please state where and when you picked up the box in your message.  If possible, please also include the tracking code from the sticker on your box.</p>
-        </div>
-        <div id="contact-box">
-          <form
-            action="https://formspree.io/xwkrlykv"
-            method="POST"
-          >
-            <input type="text" name="name" placeholder="Your Name">
-            <input type="text" name="_replyto" placeholder="Email address or Phone Number">
-            <textarea type="text" id="message-box" textarea name="message" rows="5" cols="33" placeholder="Enter your comment or question here..."></textarea>
-            <div class="text-center">
-              <button class="dark-btn" type="submit">Send Message</button>
+      <section id="faq">
+        <h2 class="py-5 text-center">Frequently Asked Questions</h2>
+        <div class="m-auto">
+          <div id="accordion" role="tablist">
+            <div class="card">
+              <div class="card-header" role="tab" id="headingOne">
+                <h5 class="mb-0">
+                  <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="faq-header">
+                  I'm a Bay Area Resident                  </a>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                <div class="card-body">
+                  <p class="strong pt-3">How can I get a Farm Fresh Food Relief box for my family?</p>
+                  <p>Every week, we deliver around 3000 Farm Fresh Food Relief boxes around the Bay Area. Although many of these boxes are delivered directly to the homes of food-insecure families, there are many boxes distributed to the public on a first-come, first-serve basis.</p>
+                  <p>The current cities in which members of the public can find these boxes include: East Palo Alto, Pescadero, Brentwood and Stockton. For a current list of locations and times of these distributions, please reach out to us at <a href="mailto:programs@freshapproach.org">programs@freshapproach.org</a></p>
+                  <p>In the coming weeks and months we hope to add more public distribution sites. Stay tuned!</p>
+                  <p class="strong pt-5">How can I find low cost / free food resources in my city?</p>
+                  <p>Visit <a href="https://www.bayareacommunity.org/" target=_blank>bayareacommunity.org</a> to find free food offerings at school meal sites, food pantries, medical and mental health services, legal consultation and crisis hotlines.</p>
+                  <p>If you receive CalFresh EBT (SNAP) or WIC benefits, you are eligible to receive discounts at many Bay Area farmers' markets. Visit <a href="https://marketmatch.org/" target=_blank>marketmatch.org</a> to find a participating farmers' market near you.</p>
+                  <p class="strong pt-5">How can I support the Farm Fresh Food Relief Program?</p>
+                  <p class="pb-3">Thanks for your interest! The best way to help us expand our program is to <a href="https://give.freshapproach.org/campaign/farm-fresh-food-relief-program/c290393" target=_blank>make a donation</a>. If you'd like to volunteer your time, contact one of our <a href="/about/#partners">partner organizations</a> in your area and ask how you can help.</p>
+                </div>
+              </div>
             </div>
-          </form>
+            <div class="card">
+              <div class="card-header" role="tab" id="headingTwo">
+                <h5 class="mb-0">
+                  <a class="collapsed faq-header" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    I'm a Farmer or Community Partner
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="card-body">
+                  <p class="strong pt-3">I represent a community organization. How can I get boxes for my community?</p>
+                  <p>Due to the demand of this program, at this time we are unfortunately unable to distribute more boxes to community organizations. However, we always love hearing from fellow nonprofit and community organizations engaged in food access. We believe where there is mission alignment there is always the possibility for partnership. Feel free to reach out to us at <a href="mailto:programs@freshapproach.org">programs@freshapproach.org</a>.</p>
+                  <p class="strong pt-5">I represent a farm. How can we participate in the Farm Fresh Food Relief Program?</p>
+                  <p class="pb-3">We are always on the lookout for amazing new farm partners. If you want to learn more about the program and how you might fit in, please reach out to <a href="mailto:programs@freshapproach.org">programs@freshapproach.org</a>.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="headingThree">
+                <h5 class="mb-0">
+                  <a class="collapsed faq-header" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    I'm a Donor or Foundation
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="card-body">
+                  <p class="strong pt-3">How can I help support the Farm Fresh Food Relief Program?</p>
+                  <p>Thanks for your interest! The best way to help us expand our program is to <a href="https://give.freshapproach.org/campaign/farm-fresh-food-relief-program/c290393" target=_blank>make a donation</a>. We are actively seeking partnerships with donors and funders in order to expand our impact and reach new vulnerable residents. If you represent a foundation, contact us directly at <a href="mailto:grants@freshapproach.org">grants@freshapproach.org</a>.</p>
+                  <p class="strong pt-5">What is Fresh Approach's role in the Farm Fresh Food Relief Program?</p>
+                  <p>The Farm Fresh Food Relief Emergency Food Hub is a highly collaborative project involving many moving parts in seven counties. Fresh Approach provides overall coordination, marketing and communications assistance, and technical assistance for the many organizations supporting this project. Donations are collected and administered by Fresh Approach, and will be distributed across partners in the Farm Fresh Food Relief Program.</p>
+                  <p class="strong pt-5">How is the Farm Fresh Food Relief Program impacting Bay Area communities?</p>
+                  <p>We are currently delivering around 3000 Farm Fresh Food Relief boxes throughout the Bay Area every week. The program is also providing a critical source of income to over 20 small, climate-smart California farms.</p>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div id="contact-container">
+          <h2 class="pt-5 text-center">Contact Us</h2>
+          <div id="contact-text m-auto">
+            <p class="pt-5 pb-3">Please submit your comments and questions using the form blow.</p>
+            <p class="pb-3">If you have questions about a Farm Fresh Food Relief box you received, please state where and when you picked up the box in your message.  If possible, please also include the tracking code from the sticker on your box.</p>
+            <p class="pb-3">If you represent a community organization, farm, or foundation, please send your inquiries to <a href="mailto:programs@freshapproach.org">programs@freshapproach.org</a>.</p>
+          </div>
+          <div id="contact-box">
+            <form
+              action="https://formspree.io/xwkrlykv"
+              method="POST"
+            >
+              <input type="text" name="name" placeholder="Your Name">
+              <input type="text" name="_replyto" placeholder="Email address">
+              <input type="text" name="name" placeholder="City of Residence">
+              <textarea type="text" id="message-box" textarea name="message" rows="5" cols="33" placeholder="Enter your comment or question here..."></textarea>
+              <div class="text-center">
+                <button class="dark-btn" type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
       <section class="text-center" id="donate">
