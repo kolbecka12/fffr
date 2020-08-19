@@ -138,6 +138,12 @@ section {
   height: 5rem;
 }
 
+/* ALERT */
+
+#ending-alert {
+  padding: 5.75rem 1.25rem .75rem 1.25rem;
+  margin-bottom: 0;
+}
 
 /*------------------ BUTTONS-------------------- */
 
